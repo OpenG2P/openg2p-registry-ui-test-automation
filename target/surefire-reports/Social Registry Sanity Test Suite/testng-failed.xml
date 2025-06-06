@@ -16,46 +16,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- testcase.IndividualTest -->
-      <class name="testcase.GroupTypeTest">
-        <methods>
-          <include name="groupTypeUpdation"/>
-          <include name="importTestData"/>
-          <include name="groupTypeDeletion"/>
-          <include name="setup"/>
-          <include name="groupTypeCreation"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testcase.GroupTypeTest -->
-      <class name="testcase.RegionTest">
-        <methods>
-          <include name="importTestData"/>
-          <include name="regionCreation"/>
-          <include name="setup"/>
-          <include name="regionDeletion"/>
-          <include name="tearDown"/>
-          <include name="regionUpdation"/>
-        </methods>
-      </class> <!-- testcase.RegionTest -->
-      <class name="testcase.RegistrantTagsTest">
-        <methods>
-          <include name="importTestData"/>
-          <include name="registrantTagUpdation"/>
-          <include name="setup"/>
-          <include name="registrantTagCreation"/>
-          <include name="tearDown"/>
-          <include name="registrantTagDeletion"/>
-        </methods>
-      </class> <!-- testcase.RegistrantTagsTest -->
-      <class name="testcase.RelationshipTest">
-        <methods>
-          <include name="relationshipDeletion"/>
-          <include name="importTestData"/>
-          <include name="relationshipsCreation"/>
-          <include name="relationshipUpdation"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testcase.RelationshipTest -->
       <class name="testcase.GroupTest">
         <methods>
           <include name="groupCreation"/>
@@ -66,25 +26,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- testcase.GroupTest -->
-      <class name="testcase.LoginPageTest">
-        <methods>
-          <include name="importTestData"/>
-          <include name="resetPassword"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- testcase.LoginPageTest -->
-      <class name="testcase.DistrictConfigTest">
-        <methods>
-          <include name="importTestData"/>
-          <include name="districtConfigCreation"/>
-          <include name="districtConfigDeletion"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="districtConfigUpdation"/>
-        </methods>
-      </class> <!-- testcase.DistrictConfigTest -->
     </classes>
   </test> <!-- Sanity Suite(failed) -->
 </suite> <!-- Failed suite [Social Registry Sanity Test Suite] -->

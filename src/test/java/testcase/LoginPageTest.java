@@ -3,11 +3,13 @@ package testcase;
 import base.BaseLogin;
 import base.DriverCreator;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import listeners.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.Commons;
 import utilities.TestData;
@@ -18,6 +20,7 @@ import java.time.Duration;
 
 import static base.DriverCreator.driver;
 
+@Listeners(TestListener.class)
 public class LoginPageTest extends BaseLogin {
 
 

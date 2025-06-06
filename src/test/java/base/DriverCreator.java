@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -78,9 +79,11 @@ public class DriverCreator {
     }
 
     @AfterMethod
-    public void tearDown() {
-
-        driver.close();
+    public void tearDown(ITestResult result) {
+        if (result.getStatus() != ITestResult.FAILURE) {
+            driver.close();
+        }
     }
+
 
 }

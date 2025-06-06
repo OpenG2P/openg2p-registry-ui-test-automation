@@ -7,9 +7,8 @@
     <test verbose="2" preserve-order="true" name="Sanity Suite">
         <classes>
             <class name="testcase.LoginPageTest"/>
-<!--            <class name="testcase.IndividualTest"/>-->
-<!--            <class name="testcase.IndividualTest"/>-->
-<!--            <class name="testcase.GroupTest"/>-->
+            <class name="testcase.IndividualTest"/>
+            <class name="testcase.GroupTest"/>
 <!--            <class name="testcase.GenderTypeTest"/>-->
 <!--            <class name="testcase.GroupMembershipKindTest"/>-->
 <!--            <class name="testcase.GroupTypeTest"/>-->

@@ -1,10 +1,12 @@
 package testcase;
 
 import base.BaseLogin;
+import listeners.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.Commons;
 
@@ -14,6 +16,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
+@Listeners(TestListener.class)
 public class IndividualTest extends BaseLogin {
 
     @Test(priority = 1)
