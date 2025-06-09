@@ -15,6 +15,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import utilities.ScreenshotUtil;
 import utilities.TestData;
 
 import java.io.File;
@@ -80,8 +81,12 @@ public class DriverCreator {
 
     @AfterMethod
     public void tearDown(ITestResult result) {
-        if (result.getStatus() != ITestResult.FAILURE) {
-            driver.close();
+        if (result.getStatus() == ITestResult.FAILURE) {
+            ScreenshotUtil.attachScreenshotToAllure(driver, result.getName());
+        }
+
+        if (driver != null) {
+            driver.quit();
         }
     }
 
