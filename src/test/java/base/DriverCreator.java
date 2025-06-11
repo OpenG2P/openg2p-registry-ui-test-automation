@@ -15,6 +15,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import utilities.ScreenshotUtil;
 import utilities.TestData;
 
 import java.io.File;
@@ -55,6 +56,8 @@ public class DriverCreator {
             ChromeOptions options = new ChromeOptions();
             if (headless.getProperty("headless").equalsIgnoreCase("true")) {
                 options.addArguments("--headless");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--window-size=1920,1080");
             }
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
@@ -80,8 +83,12 @@ public class DriverCreator {
 
     @AfterMethod
     public void tearDown(ITestResult result) {
-        if (result.getStatus() != ITestResult.FAILURE) {
-            driver.close();
+        if (result.getStatus() == ITestResult.FAILURE) {
+            ScreenshotUtil.attachScreenshotToAllure(driver, result.getName());
+        }
+
+        if (driver != null) {
+            driver.quit();
         }
     }
 

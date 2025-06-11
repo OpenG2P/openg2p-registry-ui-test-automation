@@ -19,7 +19,8 @@ public class GroupTest extends BaseLogin {
 
     @Test(priority = 1)
     void groupCreation() throws IOException, InterruptedException {
-        login();
+            login();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
             String groupName = testData.getGroupName();
             Commons.click(driver, By.xpath(locators.getProperty("group")));
             Commons.click(driver, By.xpath(locators.getProperty("new_button")));
@@ -29,12 +30,10 @@ public class GroupTest extends BaseLogin {
             Commons.click(driver, By.xpath(locators.getProperty("contact_details")));
             Commons.enter(driver, By.id(locators.getProperty("address")), testData.getAddress());
             Commons.dropDownByValue(driver, By.id(locators.getProperty("region_dropdown")), testData.getRegion());
-//        Commons.click(driver, By.xpath(locators.getProperty("add_a_line")));
-//        Commons.enter(driver, By.xpath(locators.getProperty("phone_number")),"");
-//        Commons.click(driver, By.xpath(locators.getProperty("save&close")));
             Commons.click(driver, By.xpath(locators.getProperty("save")));
             Commons.click(driver, By.xpath(locators.getProperty("groups")));
             String tableXPath = locators.getProperty("group_table");
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
             boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, groupName);
             Assert.assertTrue(entryFound, "Expected entry with text '" + groupName + "' not found");
 
@@ -44,7 +43,7 @@ public class GroupTest extends BaseLogin {
     @Test(priority = 2, dependsOnMethods = {"groupCreation"})
     void groupUpdation() throws IOException, InterruptedException {
         login();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         String groupName = testData.getGroupName();
         String groupNameUpdated = testData.getGroupNameUpdated();
         Commons.click(driver, By.xpath(locators.getProperty("group")));
@@ -64,7 +63,7 @@ public class GroupTest extends BaseLogin {
     @Test(priority = 3,dependsOnMethods = {"groupUpdation"})
     void groupDeletion() throws IOException, InterruptedException {
         login();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         String groupNameUpdated = testData.getGroupNameUpdated();
         Commons.click(driver, By.xpath(locators.getProperty("group")));
         String tableXPath = locators.getProperty("group_table");

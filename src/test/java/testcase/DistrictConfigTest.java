@@ -2,6 +2,8 @@ package testcase;
 
 import base.BaseLogin;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -16,13 +18,19 @@ public class DistrictConfigTest extends BaseLogin {
     @Test(priority = 1)
     void districtConfigCreation() throws IOException, InterruptedException {
         login();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         String district = testData.getDistrict();
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver,By.xpath(locators.getProperty("district_config")));
         Commons.click(driver,By.xpath(locators.getProperty("create_button")));
+//        WebElement newButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_button"))));
+//        newButton.click();
         Commons.enter(driver,By.xpath(locators.getProperty("district_input_field")),district);
         Commons.click(driver,By.xpath(locators.getProperty("district_save")));
+//        WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn.btn-primary.o_list_button_save")));
+//        saveButton.click();
+
+
         String tableXPath = locators.getProperty("district_table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, district);

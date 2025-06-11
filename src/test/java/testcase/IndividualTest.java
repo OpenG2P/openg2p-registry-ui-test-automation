@@ -42,9 +42,6 @@ public class IndividualTest extends BaseLogin {
         Commons.enter(driver,By.id(locators.getProperty("occupation")),testData.getOccupation());
         Commons.enter(driver,By.id(locators.getProperty("income")),testData.getIncome());
         Commons.dropDownByValue(driver,By.id(locators.getProperty("gender_dropdown")), testData.getGender());
-//        Commons.click(driver, By.xpath(locators.getProperty("add_a_line")));
-//        Commons.enter(driver, By.xpath(locators.getProperty("phone_number")),"");
-//        Commons.click(driver, By.xpath(locators.getProperty("save&close")));
         Commons.click(driver,By.xpath(locators.getProperty("save")));
         Commons.click(driver, By.xpath(locators.getProperty("individuals")));
         String individualName = familyName + ", " + givenName + " " + additionalName;

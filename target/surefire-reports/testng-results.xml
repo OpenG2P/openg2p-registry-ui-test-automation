@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="4" failed="2" skipped="2">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-06T11:28:31 IST" name="Social Registry Sanity Test Suite" finished-at="2025-06-06T11:30:19 IST" duration-ms="108051">
+  <suite started-at="2025-06-11T11:21:52 IST" name="Social Registry Sanity Test Suite" finished-at="2025-06-11T11:22:43 IST" duration-ms="50978">
     <groups>
     </groups>
-    <test started-at="2025-06-06T11:28:31 IST" name="Sanity Suite" finished-at="2025-06-06T11:30:19 IST" duration-ms="108051">
+    <test started-at="2025-06-11T11:21:52 IST" name="Sanity Suite" finished-at="2025-06-11T11:22:43 IST" duration-ms="50978">
       <class name="testcase.LoginPageTest">
-        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.LoginPageTest@1ef3efa8]" started-at="2025-06-06T11:28:31 IST" name="importTestData" finished-at="2025-06-06T11:28:31 IST" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:21:52 IST" name="importTestData" finished-at="2025-06-11T11:21:52 IST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- importTestData -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.LoginPageTest@1ef3efa8]" started-at="2025-06-06T11:28:31 IST" name="setup" finished-at="2025-06-06T11:28:34 IST" duration-ms="3418" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:21:52 IST" name="setup" finished-at="2025-06-11T11:22:00 IST" duration-ms="7404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="resetPassword()[pri:1, instance:testcase.LoginPageTest@1ef3efa8]" started-at="2025-06-06T11:28:34 IST" name="resetPassword" finished-at="2025-06-06T11:29:01 IST" duration-ms="26682" status="PASS">
+        <test-method signature="resetPassword()[pri:1, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:00 IST" name="resetPassword" finished-at="2025-06-11T11:22:22 IST" duration-ms="22781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetPassword -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.LoginPageTest@1ef3efa8]" started-at="2025-06-06T11:29:01 IST" name="tearDown" finished-at="2025-06-06T11:29:01 IST" duration-ms="138" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:23 IST" name="tearDown" finished-at="2025-06-11T11:22:23 IST" duration-ms="271" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=resetPassword status=SUCCESS method=LoginPageTest.resetPassword()[pri:1, instance:testcase.LoginPageTest@1ef3efa8] output={null}]]]>
+                <![CDATA[[TestResult name=resetPassword status=SUCCESS method=LoginPageTest.resetPassword()[pri:1, instance:testcase.LoginPageTest@5974109] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.LoginPageTest@1ef3efa8]" started-at="2025-06-06T11:29:01 IST" name="setup" finished-at="2025-06-06T11:29:03 IST" duration-ms="1764" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:23 IST" name="setup" finished-at="2025-06-11T11:22:31 IST" duration-ms="8257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:2, instance:testcase.LoginPageTest@1ef3efa8]" started-at="2025-06-06T11:29:03 IST" name="loginTest" finished-at="2025-06-06T11:29:15 IST" duration-ms="11742" status="PASS">
+        <test-method signature="loginTest()[pri:2, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:31 IST" name="loginTest" finished-at="2025-06-11T11:22:43 IST" duration-ms="11569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.LoginPageTest@1ef3efa8]" started-at="2025-06-06T11:29:15 IST" name="tearDown" finished-at="2025-06-06T11:29:15 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:43 IST" name="tearDown" finished-at="2025-06-11T11:22:43 IST" duration-ms="249" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:2, instance:testcase.LoginPageTest@1ef3efa8] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:2, instance:testcase.LoginPageTest@5974109] output={null}]]]>
               </value>
             </param>
           </params>
@@ -50,260 +50,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcase.LoginPageTest -->
-      <class name="testcase.GroupTest">
-        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.GroupTest@306851c7]" started-at="2025-06-06T11:30:02 IST" name="importTestData" finished-at="2025-06-06T11:30:02 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- importTestData -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupTest@306851c7]" started-at="2025-06-06T11:30:02 IST" name="setup" finished-at="2025-06-06T11:30:04 IST" duration-ms="1541" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="groupCreation()[pri:1, instance:testcase.GroupTest@306851c7]" started-at="2025-06-06T11:30:04 IST" name="groupCreation" finished-at="2025-06-06T11:30:18 IST" duration-ms="14637" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected entry with text 'AutoTestGroup' not found expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected entry with text 'AutoTestGroup' not found expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at testcase.GroupTest.groupCreation(GroupTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- groupCreation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupTest@306851c7]" started-at="2025-06-06T11:30:19 IST" name="tearDown" finished-at="2025-06-06T11:30:19 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=groupCreation status=FAILURE method=GroupTest.groupCreation()[pri:1, instance:testcase.GroupTest@306851c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="groupUpdation()[pri:2, instance:testcase.GroupTest@306851c7]" started-at="2025-06-06T11:30:19 IST" name="groupUpdation" finished-at="2025-06-06T11:30:19 IST" depends-on-methods="testcase.GroupTest.groupCreation" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method testcase.GroupTest.groupUpdation() on instance testcase.GroupTest@306851c7 depends on not successfully finished methods 
-[testcase.GroupTest.groupCreation() on instance testcase.GroupTest@306851c7]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testcase.GroupTest.groupUpdation() on instance testcase.GroupTest@306851c7 depends on not successfully finished methods 
-[testcase.GroupTest.groupCreation() on instance testcase.GroupTest@306851c7]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- groupUpdation -->
-        <test-method signature="groupDeletion()[pri:3, instance:testcase.GroupTest@306851c7]" started-at="2025-06-06T11:30:19 IST" name="groupDeletion" finished-at="2025-06-06T11:30:19 IST" depends-on-methods="testcase.GroupTest.groupUpdation" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method testcase.GroupTest.groupDeletion() on instance testcase.GroupTest@306851c7 depends on not successfully finished methods 
-[testcase.GroupTest.groupUpdation() on instance testcase.GroupTest@306851c7]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testcase.GroupTest.groupDeletion() on instance testcase.GroupTest@306851c7 depends on not successfully finished methods 
-[testcase.GroupTest.groupUpdation() on instance testcase.GroupTest@306851c7]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- groupDeletion -->
-      </class> <!-- testcase.GroupTest -->
-      <class name="testcase.IndividualTest">
-        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:15 IST" name="importTestData" finished-at="2025-06-06T11:29:15 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- importTestData -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:15 IST" name="setup" finished-at="2025-06-06T11:29:17 IST" duration-ms="1800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="individualCreation()[pri:1, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:17 IST" name="individualCreation" finished-at="2025-06-06T11:29:32 IST" duration-ms="15312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- individualCreation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:32 IST" name="tearDown" finished-at="2025-06-06T11:29:32 IST" duration-ms="141" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=individualCreation status=SUCCESS method=IndividualTest.individualCreation()[pri:1, instance:testcase.IndividualTest@37b70343] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:32 IST" name="setup" finished-at="2025-06-06T11:29:34 IST" duration-ms="2223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="individualUpdation()[pri:2, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:34 IST" name="individualUpdation" finished-at="2025-06-06T11:29:47 IST" depends-on-methods="testcase.IndividualTest.individualCreation" duration-ms="12816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- individualUpdation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:47 IST" name="tearDown" finished-at="2025-06-06T11:29:47 IST" duration-ms="123" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=individualUpdation status=SUCCESS method=IndividualTest.individualUpdation()[pri:2, instance:testcase.IndividualTest@37b70343] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:47 IST" name="setup" finished-at="2025-06-06T11:29:49 IST" duration-ms="1759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="individualDeletion()[pri:3, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:29:49 IST" name="individualDeletion" finished-at="2025-06-06T11:30:02 IST" depends-on-methods="testcase.IndividualTest.individualUpdation" duration-ms="12846" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Entry with text 'AUTO, UPDATED INDIVIDUAL' should be deleted but still exists. expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Entry with text 'AUTO, UPDATED INDIVIDUAL' should be deleted but still exists. expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at testcase.IndividualTest.individualDeletion(IndividualTest.java:103)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- individualDeletion -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IndividualTest@37b70343]" started-at="2025-06-06T11:30:02 IST" name="tearDown" finished-at="2025-06-06T11:30:02 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=individualDeletion status=FAILURE method=IndividualTest.individualDeletion()[pri:3, instance:testcase.IndividualTest@37b70343] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcase.IndividualTest -->
     </test> <!-- Sanity Suite -->
   </suite> <!-- Social Registry Sanity Test Suite -->
 </testng-results>
