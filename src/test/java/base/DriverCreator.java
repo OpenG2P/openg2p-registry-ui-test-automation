@@ -56,6 +56,8 @@ public class DriverCreator {
             ChromeOptions options = new ChromeOptions();
             if (headless.getProperty("headless").equalsIgnoreCase("true")) {
                 options.addArguments("--headless");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--window-size=1920,1080");
             }
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);

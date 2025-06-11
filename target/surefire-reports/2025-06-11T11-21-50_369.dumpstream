@@ -1,4 +1,4 @@
-# Created at 2025-06-09T14:46:19.398
+# Created at 2025-06-11T11:21:50.712
 Boot Manifest-JAR contains absolute paths in classpath 'E:\Social Registry Sanity UI Automation\openg2p-social-registry-ui-test-automation\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root
