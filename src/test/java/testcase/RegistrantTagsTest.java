@@ -22,9 +22,10 @@ public class RegistrantTagsTest extends BaseLogin {
         Commons.click(driver, By.xpath(locators.getProperty("registrant_tags")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("configurations_data_input")), registrantTag);
-        Commons.click(driver, By.xpath(locators.getProperty("save_registrant_tag")));
+        Commons.click(driver, By.xpath(locators.getProperty("save_button")));
         String tableXPath = locators.getProperty("registrantTag_table");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By newEntry = By.xpath("//tr[td[contains(text(),'" + registrantTag + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, registrantTag);
         Assert.assertTrue(entryFound, "Expected entry with text '" + registrantTag + "' not found");
 
@@ -44,7 +45,8 @@ public class RegistrantTagsTest extends BaseLogin {
         Assert.assertTrue(entryFound, "Expected entry with text '" + registrantTag + "' not found");
         Commons.enter(driver, By.xpath(locators.getProperty("configurations_data_input")), registrantTagUpdated);
         Commons.click(driver, By.xpath(locators.getProperty("save_update")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By updatedEntry = By.xpath("//tr[td[contains(text(),'" + registrantTagUpdated + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(updatedEntry));
         boolean entryUpdateFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, registrantTagUpdated);
         Assert.assertTrue(entryUpdateFound, "Expected entry with text '" + registrantTagUpdated + "' not found");
     }

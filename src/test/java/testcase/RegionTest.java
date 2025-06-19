@@ -22,9 +22,10 @@ public class RegionTest extends BaseLogin {
         Commons.click(driver,By.xpath(locators.getProperty("region")));
         Commons.click(driver,By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver,By.xpath(locators.getProperty("configurations_data_input")),region);
-        Commons.click(driver,By.xpath(locators.getProperty("save_region")));
+        Commons.click(driver,By.xpath(locators.getProperty("save_button")));
         String tableXPath = locators.getProperty("region_table");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By newEntry = By.xpath("//tr[td[contains(text(),'" + region + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, region);
         Assert.assertTrue(entryFound, "Expected entry with text '" + region + "' not found");
 
@@ -44,7 +45,8 @@ public class RegionTest extends BaseLogin {
         Assert.assertTrue(entryFound, "Expected entry with text '" + region + "' not found");
         Commons.enter(driver,By.xpath(locators.getProperty("configurations_data_input")),regionUpdated);
         Commons.click(driver,By.xpath(locators.getProperty("save_update")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By updatedEntry = By.xpath("//tr[td[contains(text(),'" + regionUpdated + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(updatedEntry));
         boolean entryUpdateFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, regionUpdated);
         Assert.assertTrue(entryUpdateFound, "Expected entry with text '" + regionUpdated + "' not found");
 
@@ -66,7 +68,8 @@ public class RegionTest extends BaseLogin {
         Commons.click(driver,By.xpath(locators.getProperty("actions")));
         Commons.click(driver,By.xpath(locators.getProperty("delete")));
         Commons.click(driver,By.xpath(locators.getProperty("delete_confirmation")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By deletedEntry = By.xpath("//tr[td[contains(text(),'" + regionUpdated + "')]]");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(deletedEntry));
         boolean entryStillExists = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, regionUpdated);
         Assert.assertFalse(entryStillExists, "Entry with text '" + regionUpdated + "' should be deleted but still exists.");
     }
