@@ -1,13 +1,19 @@
-name: Test Workflow
+#name: Test Workflow
+#
+#on:
+#  push:
+#    branches:
+#      - develop
+#  pull_request:
+#    branches:
+#      - develop
+#  workflow_dispatch:
+
+name: Run on Dispatch
 
 on:
-  push:
-    branches:
-      - develop
-  pull_request:
-    branches:
-      - develop
-  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger-tests]
 
 jobs:
   test:

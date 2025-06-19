@@ -2,6 +2,7 @@ package base;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -54,13 +55,20 @@ public class DriverCreator {
 
         if (properties.getProperty("browser").equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
-            if (headless.getProperty("headless").equalsIgnoreCase("true")) {
+            boolean isHeadless = headless.getProperty("headless").equalsIgnoreCase("true");
+            if (isHeadless) {
                 options.addArguments("--headless");
-                options.addArguments("--disable-gpu");
                 options.addArguments("--window-size=1920,1080");
+                options.addArguments("--force-device-scale-factor=1");
+                options.addArguments("--disable-gpu");
             }
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
+            if (isHeadless) {
+                driver.manage().window().setSize(new Dimension(1920, 1080));
+            } else {
+                driver.manage().window().maximize();
+            }
         } else if (properties.getProperty("browser").equalsIgnoreCase("firefox")) {
             FirefoxOptions options = new FirefoxOptions();
             if (headless.getProperty("headless").equalsIgnoreCase("true")) {
@@ -77,7 +85,6 @@ public class DriverCreator {
             driver = new EdgeDriver(options);
         }
         driver.get(properties.getProperty("openg2purl"));
-        driver.manage().window().maximize();
         logger.info("driver has been created successfully");
     }
 

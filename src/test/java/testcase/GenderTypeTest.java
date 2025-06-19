@@ -23,9 +23,10 @@ public class GenderTypeTest extends BaseLogin {
         Commons.click(driver,By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver,By.xpath(locators.getProperty("gender_type_data_input_code")),gender);
         Commons.enter(driver,By.xpath(locators.getProperty("gender_type_data_input_value")),gender);
-        Commons.click(driver,By.xpath(locators.getProperty("gender_type_save_button")));
+        Commons.click(driver,By.xpath(locators.getProperty("save_button")));
         String tableXPath = locators.getProperty("gender_table");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By newEntry = By.xpath("//tr[td[contains(text(),'" + gender + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, gender);
         Assert.assertTrue(entryFound, "Expected entry with text '" + gender + "' not found");
     }
@@ -45,7 +46,8 @@ public class GenderTypeTest extends BaseLogin {
         Commons.clearAndEnter(driver,By.xpath(locators.getProperty("gender_type_data_input_code")),genderUpdated);
         Commons.clearAndEnter(driver,By.xpath(locators.getProperty("gender_type_data_input_value")),genderUpdated);
         Commons.click(driver,By.xpath(locators.getProperty("save_update")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By updatedEntry = By.xpath("//tr[td[contains(text(),'" + genderUpdated + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(updatedEntry));
         boolean entryUpdateFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, genderUpdated);
         Assert.assertTrue(entryUpdateFound, "Expected entry with text '" + genderUpdated + "' not found");
 
@@ -67,7 +69,8 @@ public class GenderTypeTest extends BaseLogin {
         Commons.click(driver,By.xpath(locators.getProperty("actions")));
         Commons.click(driver,By.xpath(locators.getProperty("delete")));
         Commons.click(driver,By.xpath(locators.getProperty("delete_confirmation")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By deletedEntry = By.xpath("//tr[td[contains(text(),'" + genderUpdated + "')]]");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(deletedEntry));
         boolean entryStillExists = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, genderUpdated);
         Assert.assertFalse(entryStillExists, "Entry with text '" + genderUpdated + "' should be deleted but still exists.");
 

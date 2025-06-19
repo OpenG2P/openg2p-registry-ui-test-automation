@@ -21,7 +21,6 @@ import static base.DriverCreator.driver;
 
 public class IdTypeTest extends BaseLogin {
 
-    String idTpye;
     @Test(priority = 1)
     void idTypeCreation() throws IOException, InterruptedException {
         login();
@@ -31,9 +30,10 @@ public class IdTypeTest extends BaseLogin {
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("configurations_data_input")), idType);
-        Commons.click(driver, By.xpath(locators.getProperty("id_type_save_button")));
+        Commons.click(driver, By.xpath(locators.getProperty("save_button")));
         String tableXPath = locators.getProperty("idtype_table");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By newEntry = By.xpath("//tr[td[contains(text(),'" + idType + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, idType);
         Assert.assertTrue(entryFound, "Expected entry with text '" + idType + "' not found");
     }
@@ -52,7 +52,8 @@ public class IdTypeTest extends BaseLogin {
         Assert.assertTrue(entryFound, "Expected entry with text '" + idType + "' not found");
         Commons.enter(driver,By.xpath(locators.getProperty("configurations_data_input")),idTypeUpdated);
         Commons.click(driver,By.xpath(locators.getProperty("save_update")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By updatedEntry = By.xpath("//tr[td[contains(text(),'" + idTypeUpdated + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(updatedEntry));
         boolean entryUpdateFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, idTypeUpdated);
         Assert.assertTrue(entryUpdateFound, "Expected entry with text '" + idTypeUpdated + "' not found");
     }
@@ -73,7 +74,8 @@ public class IdTypeTest extends BaseLogin {
         Commons.click(driver,By.xpath(locators.getProperty("actions")));
         Commons.click(driver,By.xpath(locators.getProperty("delete")));
         Commons.click(driver,By.xpath(locators.getProperty("delete_confirmation")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By deletedEntry = By.xpath("//tr[td[contains(text(),'" + idTypeUpdated + "')]]");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(deletedEntry));
         boolean entryStillExists = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, idTypeUpdated);
         Assert.assertFalse(entryStillExists, "Entry with text '" + idTypeUpdated + "' should be deleted but still exists.");
     }

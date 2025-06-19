@@ -22,9 +22,10 @@ public class GroupMembershipKindTest extends BaseLogin {
         Commons.click(driver,By.xpath(locators.getProperty("group_membership_kind")));
         Commons.click(driver,By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver,By.xpath(locators.getProperty("group_membership_kind_data_input")),groupMembershipKind);
-        Commons.click(driver,By.xpath(locators.getProperty("save_group_membership_kind")));
+        Commons.click(driver,By.xpath(locators.getProperty("save_button")));
         String tableXPath = locators.getProperty("group_membership_kind_table");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By newEntry = By.xpath("//tr[td[contains(text(),'" + groupMembershipKind + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, groupMembershipKind);
         Assert.assertTrue(entryFound, "Expected entry with text '" + groupMembershipKind + "' not found");
     }
@@ -44,7 +45,8 @@ public class GroupMembershipKindTest extends BaseLogin {
         Assert.assertTrue(entryFound, "Expected entry with text '" + groupMembershipKind + "' not found");
         Commons.enter(driver,By.xpath(locators.getProperty("group_membership_kind_data_input")),groupMembershipKindUpdated);
         Commons.click(driver,By.xpath(locators.getProperty("save_update")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By updatedEntry = By.xpath("//tr[td[contains(text(),'" + groupMembershipKindUpdated + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(updatedEntry));
         boolean entryUpdateFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, groupMembershipKindUpdated);
         Assert.assertTrue(entryUpdateFound, "Expected entry with text '" + groupMembershipKindUpdated + "' not found");
 
@@ -66,7 +68,8 @@ public class GroupMembershipKindTest extends BaseLogin {
         Commons.click(driver,By.xpath(locators.getProperty("actions")));
         Commons.click(driver,By.xpath(locators.getProperty("delete")));
         Commons.click(driver,By.xpath(locators.getProperty("delete_confirmation")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By deletedEntry = By.xpath("//tr[td[contains(text(),'" + groupMembershipKindUpdated + "')]]");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(deletedEntry));
         boolean entryStillExists = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, groupMembershipKindUpdated);
         Assert.assertFalse(entryStillExists, "Entry with text '" + groupMembershipKindUpdated + "' should be deleted but still exists.");
     }

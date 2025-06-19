@@ -22,17 +22,12 @@ public class DistrictConfigTest extends BaseLogin {
         String district = testData.getDistrict();
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver,By.xpath(locators.getProperty("district_config")));
-        Commons.click(driver,By.xpath(locators.getProperty("create_button")));
-//        WebElement newButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_button"))));
-//        newButton.click();
+        Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver,By.xpath(locators.getProperty("district_input_field")),district);
-        Commons.click(driver,By.xpath(locators.getProperty("district_save")));
-//        WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn.btn-primary.o_list_button_save")));
-//        saveButton.click();
-
-
+        Commons.click(driver, By.xpath(locators.getProperty("save_button")));
         String tableXPath = locators.getProperty("district_table");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By newEntry = By.xpath("//tr[td[contains(text(),'" + district + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, district);
         Assert.assertTrue(entryFound, "Expected entry with text '" + district + "' not found");
     }
@@ -51,7 +46,8 @@ public class DistrictConfigTest extends BaseLogin {
         Assert.assertTrue(entryFound, "Expected entry with text '" + district + "' not found");
         Commons.clearAndEnter(driver,By.xpath(locators.getProperty("district_input_field")),districtUpdated);
         Commons.click(driver,By.xpath(locators.getProperty("save_update")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By updatedEntry = By.xpath("//tr[td[contains(text(),'" + districtUpdated + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(updatedEntry));
         boolean entryUpdateFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, districtUpdated);
         Assert.assertTrue(entryUpdateFound, "Expected entry with text '" + districtUpdated + "' not found");
     }
@@ -72,7 +68,8 @@ public class DistrictConfigTest extends BaseLogin {
         Commons.click(driver,By.xpath(locators.getProperty("actions")));
         Commons.click(driver,By.xpath(locators.getProperty("delete")));
         Commons.click(driver,By.xpath(locators.getProperty("delete_confirmation")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By deletedEntry = By.xpath("//tr[td[contains(text(),'" + districtUpdated + "')]]");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(deletedEntry));
         boolean entryStillExists = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, districtUpdated);
         Assert.assertFalse(entryStillExists, "Entry with text '" + districtUpdated + "' should be deleted but still exists.");
     }
