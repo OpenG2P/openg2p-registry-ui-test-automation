@@ -5,6 +5,7 @@ testcase\GroupMembershipKindTest.class
 base\BaseLogin.class
 testcase\GroupTest.class
 utilities\ScreenshotUtil.class
+base\DriverManager.class
 testcase\GenderTypeTest.class
 testcase\GroupTypeTest.class
 testcase\RegionTest.class
