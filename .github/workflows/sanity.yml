@@ -7,13 +7,14 @@
 #  pull_request:
 #    branches:
 #      - develop
-#  workflow_dispatch:
+
 
 name: Run on Dispatch
 
 on:
   repository_dispatch:
     types: [trigger-tests]
+  workflow_dispatch:
 
 jobs:
   test:
