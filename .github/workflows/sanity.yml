@@ -14,7 +14,7 @@ name: Run on Dispatch
 on:
   repository_dispatch:
     types: [trigger-tests]
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   test:
