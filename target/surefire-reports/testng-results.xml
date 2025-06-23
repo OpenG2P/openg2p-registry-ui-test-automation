@@ -1,48 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="32" passed="32" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-11T11:21:52 IST" name="Social Registry Sanity Test Suite" finished-at="2025-06-11T11:22:43 IST" duration-ms="50978">
+  <suite started-at="2025-06-20T17:45:12 IST" name="Social Registry Sanity Test Suite" finished-at="2025-06-20T17:50:05 IST" duration-ms="293113">
     <groups>
     </groups>
-    <test started-at="2025-06-11T11:21:52 IST" name="Sanity Suite" finished-at="2025-06-11T11:22:43 IST" duration-ms="50978">
-      <class name="testcase.LoginPageTest">
-        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:21:52 IST" name="importTestData" finished-at="2025-06-11T11:21:52 IST" duration-ms="272" status="PASS">
+    <test started-at="2025-06-20T17:45:12 IST" name="Sanity Suite" finished-at="2025-06-20T17:50:05 IST" duration-ms="293113">
+      <class name="testcase.DistrictConfigTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:46:53 IST" name="importTestData" finished-at="2025-06-20T17:46:53 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- importTestData -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:21:52 IST" name="setup" finished-at="2025-06-11T11:22:00 IST" duration-ms="7404" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:46:53 IST" name="setup" finished-at="2025-06-20T17:46:55 IST" duration-ms="1625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="resetPassword()[pri:1, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:00 IST" name="resetPassword" finished-at="2025-06-11T11:22:22 IST" duration-ms="22781" status="PASS">
+        <test-method signature="districtConfigCreation()[pri:1, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:46:55 IST" name="districtConfigCreation" finished-at="2025-06-20T17:47:10 IST" duration-ms="14863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resetPassword -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:23 IST" name="tearDown" finished-at="2025-06-11T11:22:23 IST" duration-ms="271" status="PASS">
+        </test-method> <!-- districtConfigCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:47:10 IST" name="tearDown" finished-at="2025-06-20T17:47:10 IST" duration-ms="215" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=resetPassword status=SUCCESS method=LoginPageTest.resetPassword()[pri:1, instance:testcase.LoginPageTest@5974109] output={null}]]]>
+                <![CDATA[[TestResult name=districtConfigCreation status=SUCCESS method=DistrictConfigTest.districtConfigCreation()[pri:1, instance:testcase.DistrictConfigTest@19fb8826] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:23 IST" name="setup" finished-at="2025-06-11T11:22:31 IST" duration-ms="8257" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:48:21 IST" name="setup" finished-at="2025-06-20T17:48:23 IST" duration-ms="1660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:2, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:31 IST" name="loginTest" finished-at="2025-06-11T11:22:43 IST" duration-ms="11569" status="PASS">
+        <test-method signature="districtConfigUpdation()[pri:2, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:48:23 IST" name="districtConfigUpdation" finished-at="2025-06-20T17:48:34 IST" depends-on-methods="testcase.DistrictConfigTest.districtConfigCreation" duration-ms="11806" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.LoginPageTest@5974109]" started-at="2025-06-11T11:22:43 IST" name="tearDown" finished-at="2025-06-11T11:22:43 IST" duration-ms="249" status="PASS">
+        </test-method> <!-- districtConfigUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:48:34 IST" name="tearDown" finished-at="2025-06-20T17:48:35 IST" duration-ms="234" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:2, instance:testcase.LoginPageTest@5974109] output={null}]]]>
+                <![CDATA[[TestResult name=districtConfigUpdation status=SUCCESS method=DistrictConfigTest.districtConfigUpdation()[pri:2, instance:testcase.DistrictConfigTest@19fb8826] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:49:47 IST" name="setup" finished-at="2025-06-20T17:49:49 IST" duration-ms="1602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="districtConfigDeletion()[pri:3, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:49:49 IST" name="districtConfigDeletion" finished-at="2025-06-20T17:50:05 IST" depends-on-methods="testcase.DistrictConfigTest.districtConfigUpdation" duration-ms="15792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- districtConfigDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.DistrictConfigTest@19fb8826]" started-at="2025-06-20T17:50:05 IST" name="tearDown" finished-at="2025-06-20T17:50:05 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=districtConfigDeletion status=SUCCESS method=DistrictConfigTest.districtConfigDeletion()[pri:3, instance:testcase.DistrictConfigTest@19fb8826] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.DistrictConfigTest -->
+      <class name="testcase.LoginPageTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.LoginPageTest@2fea7088]" started-at="2025-06-20T17:45:12 IST" name="importTestData" finished-at="2025-06-20T17:45:12 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.LoginPageTest@2fea7088]" started-at="2025-06-20T17:45:12 IST" name="setup" finished-at="2025-06-20T17:45:15 IST" duration-ms="3042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="resetPassword()[pri:1, instance:testcase.LoginPageTest@2fea7088]" started-at="2025-06-20T17:45:15 IST" name="resetPassword" finished-at="2025-06-20T17:45:42 IST" duration-ms="26852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.LoginPageTest@2fea7088]" started-at="2025-06-20T17:45:42 IST" name="tearDown" finished-at="2025-06-20T17:45:42 IST" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resetPassword status=SUCCESS method=LoginPageTest.resetPassword()[pri:1, instance:testcase.LoginPageTest@2fea7088] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.LoginPageTest@2fea7088]" started-at="2025-06-20T17:45:42 IST" name="setup" finished-at="2025-06-20T17:45:44 IST" duration-ms="2064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:2, instance:testcase.LoginPageTest@2fea7088]" started-at="2025-06-20T17:45:44 IST" name="loginTest" finished-at="2025-06-20T17:45:54 IST" duration-ms="9452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.LoginPageTest@2fea7088]" started-at="2025-06-20T17:45:54 IST" name="tearDown" finished-at="2025-06-20T17:45:54 IST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:2, instance:testcase.LoginPageTest@2fea7088] output={null}]]]>
               </value>
             </param>
           </params>
@@ -50,6 +113,573 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcase.LoginPageTest -->
+      <class name="testcase.RelationshipTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:46:52 IST" name="importTestData" finished-at="2025-06-20T17:46:52 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:46:52 IST" name="setup" finished-at="2025-06-20T17:46:53 IST" duration-ms="1627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="relationshipsCreation()[pri:1, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:46:53 IST" name="relationshipsCreation" finished-at="2025-06-20T17:47:09 IST" duration-ms="16202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relationshipsCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:47:09 IST" name="tearDown" finished-at="2025-06-20T17:47:10 IST" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=relationshipsCreation status=SUCCESS method=RelationshipTest.relationshipsCreation()[pri:1, instance:testcase.RelationshipTest@79da1ec0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:48:19 IST" name="setup" finished-at="2025-06-20T17:48:21 IST" duration-ms="1685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="relationshipUpdation()[pri:2, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:48:21 IST" name="relationshipUpdation" finished-at="2025-06-20T17:48:32 IST" depends-on-methods="testcase.RelationshipTest.relationshipsCreation" duration-ms="11474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relationshipUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:48:32 IST" name="tearDown" finished-at="2025-06-20T17:48:32 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=relationshipUpdation status=SUCCESS method=RelationshipTest.relationshipUpdation()[pri:2, instance:testcase.RelationshipTest@79da1ec0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:49:43 IST" name="setup" finished-at="2025-06-20T17:49:45 IST" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="relationshipDeletion()[pri:3, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:49:45 IST" name="relationshipDeletion" finished-at="2025-06-20T17:50:00 IST" depends-on-methods="testcase.RelationshipTest.relationshipUpdation" duration-ms="15524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relationshipDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RelationshipTest@79da1ec0]" started-at="2025-06-20T17:50:00 IST" name="tearDown" finished-at="2025-06-20T17:50:00 IST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=relationshipDeletion status=SUCCESS method=RelationshipTest.relationshipDeletion()[pri:3, instance:testcase.RelationshipTest@79da1ec0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.RelationshipTest -->
+      <class name="testcase.GroupTypeTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:46:16 IST" name="importTestData" finished-at="2025-06-20T17:46:16 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:46:16 IST" name="setup" finished-at="2025-06-20T17:46:17 IST" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupTypeCreation()[pri:1, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:46:17 IST" name="groupTypeCreation" finished-at="2025-06-20T17:46:34 IST" duration-ms="16459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupTypeCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:46:34 IST" name="tearDown" finished-at="2025-06-20T17:46:34 IST" duration-ms="246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupTypeCreation status=SUCCESS method=GroupTypeTest.groupTypeCreation()[pri:1, instance:testcase.GroupTypeTest@75ed9710] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:47:43 IST" name="setup" finished-at="2025-06-20T17:47:45 IST" duration-ms="2139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupTypeUpdation()[pri:2, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:47:45 IST" name="groupTypeUpdation" finished-at="2025-06-20T17:48:02 IST" depends-on-methods="testcase.GroupTypeTest.groupTypeCreation" duration-ms="16237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupTypeUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:48:02 IST" name="tearDown" finished-at="2025-06-20T17:48:02 IST" duration-ms="226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupTypeUpdation status=SUCCESS method=GroupTypeTest.groupTypeUpdation()[pri:2, instance:testcase.GroupTypeTest@75ed9710] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:49:10 IST" name="setup" finished-at="2025-06-20T17:49:12 IST" duration-ms="1574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupTypeDeletion()[pri:3, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:49:12 IST" name="groupTypeDeletion" finished-at="2025-06-20T17:49:26 IST" depends-on-methods="testcase.GroupTypeTest.groupTypeUpdation" duration-ms="14388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupTypeDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupTypeTest@75ed9710]" started-at="2025-06-20T17:49:26 IST" name="tearDown" finished-at="2025-06-20T17:49:26 IST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupTypeDeletion status=SUCCESS method=GroupTypeTest.groupTypeDeletion()[pri:3, instance:testcase.GroupTypeTest@75ed9710] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.GroupTypeTest -->
+      <class name="testcase.RegionTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:46:34 IST" name="importTestData" finished-at="2025-06-20T17:46:34 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:46:34 IST" name="setup" finished-at="2025-06-20T17:46:36 IST" duration-ms="2253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="regionCreation()[pri:1, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:46:36 IST" name="regionCreation" finished-at="2025-06-20T17:46:51 IST" duration-ms="14971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regionCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:46:51 IST" name="tearDown" finished-at="2025-06-20T17:46:52 IST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=regionCreation status=SUCCESS method=RegionTest.regionCreation()[pri:1, instance:testcase.RegionTest@435871cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:48:02 IST" name="setup" finished-at="2025-06-20T17:48:04 IST" duration-ms="2563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="regionUpdation()[pri:2, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:48:04 IST" name="regionUpdation" finished-at="2025-06-20T17:48:19 IST" depends-on-methods="testcase.RegionTest.regionCreation" duration-ms="14445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regionUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:48:19 IST" name="tearDown" finished-at="2025-06-20T17:48:19 IST" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=regionUpdation status=SUCCESS method=RegionTest.regionUpdation()[pri:2, instance:testcase.RegionTest@435871cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:49:26 IST" name="setup" finished-at="2025-06-20T17:49:28 IST" duration-ms="1555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="regionDeletion()[pri:3, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:49:28 IST" name="regionDeletion" finished-at="2025-06-20T17:49:43 IST" depends-on-methods="testcase.RegionTest.regionUpdation" duration-ms="14915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regionDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RegionTest@435871cb]" started-at="2025-06-20T17:49:43 IST" name="tearDown" finished-at="2025-06-20T17:49:43 IST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=regionDeletion status=SUCCESS method=RegionTest.regionDeletion()[pri:3, instance:testcase.RegionTest@435871cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.RegionTest -->
+      <class name="testcase.GroupTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:45:38 IST" name="importTestData" finished-at="2025-06-20T17:45:38 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:45:38 IST" name="setup" finished-at="2025-06-20T17:45:39 IST" duration-ms="1546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupCreation()[pri:1, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:45:39 IST" name="groupCreation" finished-at="2025-06-20T17:45:56 IST" duration-ms="16700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:45:56 IST" name="tearDown" finished-at="2025-06-20T17:45:56 IST" duration-ms="242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupCreation status=SUCCESS method=GroupTest.groupCreation()[pri:1, instance:testcase.GroupTest@590c73d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:47:10 IST" name="setup" finished-at="2025-06-20T17:47:12 IST" duration-ms="2069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupUpdation()[pri:2, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:47:12 IST" name="groupUpdation" finished-at="2025-06-20T17:47:27 IST" depends-on-methods="testcase.GroupTest.groupCreation" duration-ms="15097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:47:27 IST" name="tearDown" finished-at="2025-06-20T17:47:28 IST" duration-ms="243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupUpdation status=SUCCESS method=GroupTest.groupUpdation()[pri:2, instance:testcase.GroupTest@590c73d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:48:35 IST" name="setup" finished-at="2025-06-20T17:48:37 IST" duration-ms="2220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupDeletion()[pri:3, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:48:37 IST" name="groupDeletion" finished-at="2025-06-20T17:48:53 IST" depends-on-methods="testcase.GroupTest.groupUpdation" duration-ms="15826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupTest@590c73d3]" started-at="2025-06-20T17:48:53 IST" name="tearDown" finished-at="2025-06-20T17:48:53 IST" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupDeletion status=SUCCESS method=GroupTest.groupDeletion()[pri:3, instance:testcase.GroupTest@590c73d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.GroupTest -->
+      <class name="testcase.IndividualTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:45:12 IST" name="importTestData" finished-at="2025-06-20T17:45:12 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:45:12 IST" name="setup" finished-at="2025-06-20T17:45:16 IST" duration-ms="3699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="individualCreation()[pri:1, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:45:16 IST" name="individualCreation" finished-at="2025-06-20T17:45:37 IST" duration-ms="21523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- individualCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:45:37 IST" name="tearDown" finished-at="2025-06-20T17:45:38 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=individualCreation status=SUCCESS method=IndividualTest.individualCreation()[pri:1, instance:testcase.IndividualTest@14c01636] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:47:10 IST" name="setup" finished-at="2025-06-20T17:47:11 IST" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="individualUpdation()[pri:2, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:47:11 IST" name="individualUpdation" finished-at="2025-06-20T17:47:26 IST" depends-on-methods="testcase.IndividualTest.individualCreation" duration-ms="14800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- individualUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:47:26 IST" name="tearDown" finished-at="2025-06-20T17:47:26 IST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=individualUpdation status=SUCCESS method=IndividualTest.individualUpdation()[pri:2, instance:testcase.IndividualTest@14c01636] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:48:32 IST" name="setup" finished-at="2025-06-20T17:48:34 IST" duration-ms="1679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="individualDeletion()[pri:3, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:48:34 IST" name="individualDeletion" finished-at="2025-06-20T17:48:51 IST" depends-on-methods="testcase.IndividualTest.individualUpdation" duration-ms="17155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- individualDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IndividualTest@14c01636]" started-at="2025-06-20T17:48:51 IST" name="tearDown" finished-at="2025-06-20T17:48:51 IST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=individualDeletion status=SUCCESS method=IndividualTest.individualDeletion()[pri:3, instance:testcase.IndividualTest@14c01636] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.IndividualTest -->
+      <class name="testcase.RegistrantTagsTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:46:35 IST" name="importTestData" finished-at="2025-06-20T17:46:35 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:46:35 IST" name="setup" finished-at="2025-06-20T17:46:37 IST" duration-ms="2625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registrantTagCreation()[pri:1, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:46:37 IST" name="registrantTagCreation" finished-at="2025-06-20T17:46:53 IST" duration-ms="15907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrantTagCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:46:53 IST" name="tearDown" finished-at="2025-06-20T17:46:53 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registrantTagCreation status=SUCCESS method=RegistrantTagsTest.registrantTagCreation()[pri:1, instance:testcase.RegistrantTagsTest@609640d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:48:02 IST" name="setup" finished-at="2025-06-20T17:48:05 IST" duration-ms="2588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registrantTagUpdation()[pri:2, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:48:05 IST" name="registrantTagUpdation" finished-at="2025-06-20T17:48:21 IST" depends-on-methods="testcase.RegistrantTagsTest.registrantTagCreation" duration-ms="16171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrantTagUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:48:21 IST" name="tearDown" finished-at="2025-06-20T17:48:21 IST" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registrantTagUpdation status=SUCCESS method=RegistrantTagsTest.registrantTagUpdation()[pri:2, instance:testcase.RegistrantTagsTest@609640d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:49:31 IST" name="setup" finished-at="2025-06-20T17:49:32 IST" duration-ms="1683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registrantTagDeletion()[pri:3, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:49:32 IST" name="registrantTagDeletion" finished-at="2025-06-20T17:49:47 IST" depends-on-methods="testcase.RegistrantTagsTest.registrantTagUpdation" duration-ms="14833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrantTagDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.RegistrantTagsTest@609640d5]" started-at="2025-06-20T17:49:47 IST" name="tearDown" finished-at="2025-06-20T17:49:47 IST" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registrantTagDeletion status=SUCCESS method=RegistrantTagsTest.registrantTagDeletion()[pri:3, instance:testcase.RegistrantTagsTest@609640d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.RegistrantTagsTest -->
+      <class name="testcase.IdTypeTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:46:17 IST" name="importTestData" finished-at="2025-06-20T17:46:17 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:46:17 IST" name="setup" finished-at="2025-06-20T17:46:19 IST" duration-ms="1837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="idTypeCreation()[pri:1, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:46:19 IST" name="idTypeCreation" finished-at="2025-06-20T17:46:34 IST" duration-ms="15525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- idTypeCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:46:34 IST" name="tearDown" finished-at="2025-06-20T17:46:35 IST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=idTypeCreation status=SUCCESS method=IdTypeTest.idTypeCreation()[pri:1, instance:testcase.IdTypeTest@4fc5e095] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:47:43 IST" name="setup" finished-at="2025-06-20T17:47:46 IST" duration-ms="2396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="idTypeUpdation()[pri:2, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:47:46 IST" name="idTypeUpdation" finished-at="2025-06-20T17:48:02 IST" depends-on-methods="testcase.IdTypeTest.idTypeCreation" duration-ms="15677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- idTypeUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:48:02 IST" name="tearDown" finished-at="2025-06-20T17:48:02 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=idTypeUpdation status=SUCCESS method=IdTypeTest.idTypeUpdation()[pri:2, instance:testcase.IdTypeTest@4fc5e095] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:49:12 IST" name="setup" finished-at="2025-06-20T17:49:14 IST" duration-ms="1649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="idTypeDeletion()[pri:3, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:49:14 IST" name="idTypeDeletion" finished-at="2025-06-20T17:49:30 IST" depends-on-methods="testcase.IdTypeTest.idTypeUpdation" duration-ms="16792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- idTypeDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.IdTypeTest@4fc5e095]" started-at="2025-06-20T17:49:30 IST" name="tearDown" finished-at="2025-06-20T17:49:31 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=idTypeDeletion status=SUCCESS method=IdTypeTest.idTypeDeletion()[pri:3, instance:testcase.IdTypeTest@4fc5e095] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.IdTypeTest -->
+      <class name="testcase.GroupMembershipKindTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:45:56 IST" name="importTestData" finished-at="2025-06-20T17:45:56 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:45:56 IST" name="setup" finished-at="2025-06-20T17:45:58 IST" duration-ms="1589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupMembershipKindCreation()[pri:1, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:45:58 IST" name="groupMembershipKindCreation" finished-at="2025-06-20T17:46:17 IST" duration-ms="19011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupMembershipKindCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:46:17 IST" name="tearDown" finished-at="2025-06-20T17:46:17 IST" duration-ms="336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupMembershipKindCreation status=SUCCESS method=GroupMembershipKindTest.groupMembershipKindCreation()[pri:1, instance:testcase.GroupMembershipKindTest@61884cb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:47:28 IST" name="setup" finished-at="2025-06-20T17:47:29 IST" duration-ms="1650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupMembershipKindUpdation()[pri:2, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:47:29 IST" name="groupMembershipKindUpdation" finished-at="2025-06-20T17:47:43 IST" depends-on-methods="testcase.GroupMembershipKindTest.groupMembershipKindCreation" duration-ms="13870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupMembershipKindUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:47:43 IST" name="tearDown" finished-at="2025-06-20T17:47:43 IST" duration-ms="274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupMembershipKindUpdation status=SUCCESS method=GroupMembershipKindTest.groupMembershipKindUpdation()[pri:2, instance:testcase.GroupMembershipKindTest@61884cb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:48:53 IST" name="setup" finished-at="2025-06-20T17:48:55 IST" duration-ms="1689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="groupMembershipKindDeletion()[pri:3, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:48:55 IST" name="groupMembershipKindDeletion" finished-at="2025-06-20T17:49:12 IST" depends-on-methods="testcase.GroupMembershipKindTest.groupMembershipKindUpdation" duration-ms="17084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- groupMembershipKindDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GroupMembershipKindTest@61884cb1]" started-at="2025-06-20T17:49:12 IST" name="tearDown" finished-at="2025-06-20T17:49:12 IST" duration-ms="255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=groupMembershipKindDeletion status=SUCCESS method=GroupMembershipKindTest.groupMembershipKindDeletion()[pri:3, instance:testcase.GroupMembershipKindTest@61884cb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.GroupMembershipKindTest -->
+      <class name="testcase.GenderTypeTest">
+        <test-method is-config="true" signature="importTestData()[pri:0, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:45:54 IST" name="importTestData" finished-at="2025-06-20T17:45:54 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importTestData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:45:54 IST" name="setup" finished-at="2025-06-20T17:45:56 IST" duration-ms="1955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="genderTypeCreation()[pri:1, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:45:56 IST" name="genderTypeCreation" finished-at="2025-06-20T17:46:16 IST" duration-ms="19926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genderTypeCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:46:16 IST" name="tearDown" finished-at="2025-06-20T17:46:16 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=genderTypeCreation status=SUCCESS method=GenderTypeTest.genderTypeCreation()[pri:1, instance:testcase.GenderTypeTest@6b9ce1bf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:47:26 IST" name="setup" finished-at="2025-06-20T17:47:27 IST" duration-ms="1536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="genderTypeUpdation()[pri:2, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:47:27 IST" name="genderTypeUpdation" finished-at="2025-06-20T17:47:43 IST" depends-on-methods="testcase.GenderTypeTest.genderTypeCreation" duration-ms="15761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genderTypeUpdation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:47:43 IST" name="tearDown" finished-at="2025-06-20T17:47:43 IST" duration-ms="255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=genderTypeUpdation status=SUCCESS method=GenderTypeTest.genderTypeUpdation()[pri:2, instance:testcase.GenderTypeTest@6b9ce1bf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:48:51 IST" name="setup" finished-at="2025-06-20T17:48:53 IST" duration-ms="1702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="genderTypeDeletion()[pri:3, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:48:53 IST" name="genderTypeDeletion" finished-at="2025-06-20T17:49:10 IST" depends-on-methods="testcase.GenderTypeTest.genderTypeUpdation" duration-ms="16859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genderTypeDeletion -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.GenderTypeTest@6b9ce1bf]" started-at="2025-06-20T17:49:10 IST" name="tearDown" finished-at="2025-06-20T17:49:10 IST" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=genderTypeDeletion status=SUCCESS method=GenderTypeTest.genderTypeDeletion()[pri:3, instance:testcase.GenderTypeTest@6b9ce1bf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.GenderTypeTest -->
     </test> <!-- Sanity Suite -->
   </suite> <!-- Social Registry Sanity Test Suite -->
 </testng-results>

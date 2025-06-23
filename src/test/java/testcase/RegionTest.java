@@ -1,7 +1,9 @@
 package testcase;
 
 import base.BaseLogin;
+import base.DriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -10,63 +12,87 @@ import utilities.Commons;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 public class RegionTest extends BaseLogin {
 
     @Test(priority = 1)
     void regionCreation() throws IOException, InterruptedException {
+        WebDriver driver = DriverManager.getDriver();
         login();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        Properties locators = getLocators();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         String region = testData.getRegion();
+
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
-        Commons.click(driver,By.xpath(locators.getProperty("region")));
-        Commons.click(driver,By.xpath(locators.getProperty("create_button")));
-        Commons.enter(driver,By.xpath(locators.getProperty("configurations_data_input")),region);
-        Commons.click(driver,By.xpath(locators.getProperty("save_region")));
+        Commons.click(driver, By.xpath(locators.getProperty("region")));
+        Commons.click(driver, By.xpath(locators.getProperty("create_button")));
+        Commons.enter(driver, By.xpath(locators.getProperty("configurations_data_input")), region);
+        Commons.click(driver, By.xpath(locators.getProperty("save_button")));
+
         String tableXPath = locators.getProperty("region_table");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        By newEntry = By.xpath("//tr[td[contains(text(),'" + region + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
+
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, region);
         Assert.assertTrue(entryFound, "Expected entry with text '" + region + "' not found");
-
     }
 
     @Test(priority = 2, dependsOnMethods = {"regionCreation"})
     void regionUpdation() throws IOException, InterruptedException {
+        WebDriver driver = DriverManager.getDriver();
         login();
+        Properties locators = getLocators();
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         String region = testData.getRegion();
         String regionUpdated = testData.getRegionUpdated();
+
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
-        Commons.click(driver,By.xpath(locators.getProperty("region")));
+        Commons.click(driver, By.xpath(locators.getProperty("region")));
         String tableXPath = locators.getProperty("region_table");
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, region);
         Assert.assertTrue(entryFound, "Expected entry with text '" + region + "' not found");
-        Commons.enter(driver,By.xpath(locators.getProperty("configurations_data_input")),regionUpdated);
-        Commons.click(driver,By.xpath(locators.getProperty("save_update")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+
+        Commons.clearAndEnter(driver, By.xpath(locators.getProperty("configurations_data_input")), regionUpdated);
+        Commons.click(driver, By.xpath(locators.getProperty("save_update")));
+
+        By updatedEntry = By.xpath("//tr[td[contains(text(),'" + regionUpdated + "')]]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(updatedEntry));
+
         boolean entryUpdateFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, regionUpdated);
         Assert.assertTrue(entryUpdateFound, "Expected entry with text '" + regionUpdated + "' not found");
-
     }
 
     @Test(priority = 3, dependsOnMethods = {"regionUpdation"})
     void regionDeletion() throws IOException, InterruptedException {
+        WebDriver driver = DriverManager.getDriver();
         login();
+        Properties locators = getLocators();
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         String regionUpdated = testData.getRegionUpdated();
+
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
-        Commons.click(driver,By.xpath(locators.getProperty("region")));
+        Commons.click(driver, By.xpath(locators.getProperty("region")));
         String tableXPath = locators.getProperty("region_table");
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, regionUpdated);
         Assert.assertTrue(entryFound, "Expected entry with text '" + regionUpdated + "' not found");
+
         String rowCheckboxXPath = "//tr[td[contains(text(),'" + regionUpdated + "')]]//input[@type='checkbox']";
         Commons.click(driver, By.xpath(rowCheckboxXPath));
-        Commons.click(driver,By.xpath(locators.getProperty("actions")));
-        Commons.click(driver,By.xpath(locators.getProperty("delete")));
-        Commons.click(driver,By.xpath(locators.getProperty("delete_confirmation")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        Commons.click(driver, By.xpath(locators.getProperty("actions")));
+        Commons.click(driver, By.xpath(locators.getProperty("delete")));
+        Commons.click(driver, By.xpath(locators.getProperty("delete_confirmation")));
+
+        By deletedEntry = By.xpath("//tr[td[contains(text(),'" + regionUpdated + "')]]");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(deletedEntry));
+
         boolean entryStillExists = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, regionUpdated);
         Assert.assertFalse(entryStillExists, "Entry with text '" + regionUpdated + "' should be deleted but still exists.");
     }

@@ -1,6 +1,7 @@
 package listeners;
 
 import base.DriverCreator;
+import base.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -15,7 +16,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         logger.error("FAILED: {}", result.getName());
-        WebDriver driver = DriverCreator.driver;
+        WebDriver driver = DriverManager.getDriver();
 
         if (driver != null) {
             ScreenshotUtil.attachScreenshotToAllure(driver, result.getName());
