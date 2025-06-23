@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD:src/test/resources/testng.xml
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Social Registry Sanity Test Suite" parallel="classes" thread-count="2">
-=======
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Social Registry Sanity Test Suite">
-    <listeners>
-        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
-    </listeners>
->>>>>>> b20ced0b0e974510ec2df6948027b3657dd88503:testrunner/testng.xml
     <test verbose="2" preserve-order="true" name="Sanity Suite">
         <classes>
             <class name="testcase.LoginPageTest"/>
