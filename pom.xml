@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>social-registry-ui-sanity</artifactId>
-    <packaging>pom</packaging>
+<!--    <packaging>pom</packaging>-->
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -136,7 +136,7 @@
                 <version>3.1.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testrunner/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
