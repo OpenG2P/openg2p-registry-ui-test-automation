@@ -22,9 +22,10 @@ public class RegionTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String region = testData.getRegion();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("region")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
@@ -45,10 +46,11 @@ public class RegionTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String region = testData.getRegion();
         String regionUpdated = testData.getRegionUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("region")));
         String tableXPath = locators.getProperty("region_table");
@@ -73,9 +75,10 @@ public class RegionTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String regionUpdated = testData.getRegionUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("region")));
         String tableXPath = locators.getProperty("region_table");

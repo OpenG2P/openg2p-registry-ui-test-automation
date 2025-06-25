@@ -22,9 +22,10 @@ public class GenderTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String gender = testData.getGender();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
@@ -47,10 +48,11 @@ public class GenderTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String gender = testData.getGender();
         String genderUpdated = testData.getGenderUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
 
@@ -77,9 +79,10 @@ public class GenderTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String genderUpdated = testData.getGenderUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
 

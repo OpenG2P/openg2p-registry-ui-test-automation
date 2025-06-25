@@ -22,9 +22,10 @@ public class IdTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String idType = testData.getIdType();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
@@ -45,10 +46,11 @@ public class IdTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String idType = testData.getIdType();
         String idTypeUpdated = testData.getIdTypeUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
 
@@ -74,9 +76,10 @@ public class IdTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String idTypeUpdated = testData.getIdTypeUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
 

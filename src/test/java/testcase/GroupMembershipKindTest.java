@@ -22,9 +22,10 @@ public class GroupMembershipKindTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String groupMembershipKind = testData.getGroupMembershipKind();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("group_membership_kind")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
@@ -44,10 +45,11 @@ public class GroupMembershipKindTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String groupMembershipKind = testData.getGroupMembershipKind();
         String groupMembershipKindUpdated = testData.getGroupMembershipKindUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("group_membership_kind")));
 
@@ -73,9 +75,10 @@ public class GroupMembershipKindTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String groupMembershipKindUpdated = testData.getGroupMembershipKindUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("group_membership_kind")));
 
