@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Social Registry Sanity Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="classes" name="Sanity Suite(failed)" verbose="0">
+    <classes>
+      <class name="testcase.RegionTest">
+        <methods>
+          <include name="importTestData"/>
+          <include name="regionCreation"/>
+          <include name="setup"/>
+          <include name="regionDeletion"/>
+          <include name="tearDown"/>
+          <include name="regionUpdation"/>
+        </methods>
+      </class> <!-- testcase.RegionTest -->
+      <class name="testcase.GroupTypeTest">
+        <methods>
+          <include name="groupTypeUpdation"/>
+          <include name="importTestData"/>
+          <include name="groupTypeDeletion"/>
+          <include name="setup"/>
+          <include name="groupTypeCreation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.GroupTypeTest -->
+      <class name="testcase.IdTypeTest">
+        <methods>
+          <include name="idTypeDeletion"/>
+          <include name="importTestData"/>
+          <include name="idTypeUpdation"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="idTypeCreation"/>
+        </methods>
+      </class> <!-- testcase.IdTypeTest -->
+      <class name="testcase.DistrictConfigTest">
+        <methods>
+          <include name="districtConfigCreation"/>
+          <include name="importTestData"/>
+          <include name="districtConfigDeletion"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="districtConfigUpdation"/>
+        </methods>
+      </class> <!-- testcase.DistrictConfigTest -->
+      <class name="testcase.RelationshipTest">
+        <methods>
+          <include name="relationshipDeletion"/>
+          <include name="importTestData"/>
+          <include name="relationshipsCreation"/>
+          <include name="relationshipUpdation"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.RelationshipTest -->
+      <class name="testcase.IndividualTest">
+        <methods>
+          <include name="individualUpdation"/>
+          <include name="individualCreation"/>
+          <include name="importTestData"/>
+          <include name="individualDeletion"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.IndividualTest -->
+      <class name="testcase.RegistrantTagsTest">
+        <methods>
+          <include name="importTestData"/>
+          <include name="registrantTagUpdation"/>
+          <include name="setup"/>
+          <include name="registrantTagCreation"/>
+          <include name="tearDown"/>
+          <include name="registrantTagDeletion"/>
+        </methods>
+      </class> <!-- testcase.RegistrantTagsTest -->
+      <class name="testcase.GroupMembershipKindTest">
+        <methods>
+          <include name="importTestData"/>
+          <include name="groupMembershipKindDeletion"/>
+          <include name="groupMembershipKindUpdation"/>
+          <include name="setup"/>
+          <include name="groupMembershipKindCreation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.GroupMembershipKindTest -->
+    </classes>
+  </test> <!-- Sanity Suite(failed) -->
+</suite> <!-- Failed suite [Social Registry Sanity Test Suite] -->
