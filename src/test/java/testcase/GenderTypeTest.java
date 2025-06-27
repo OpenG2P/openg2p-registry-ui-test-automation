@@ -2,11 +2,13 @@ package testcase;
 
 import base.BaseLogin;
 import base.DriverManager;
+import listeners.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.Commons;
 
@@ -14,6 +16,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+@Listeners(TestListener.class)
 public class GenderTypeTest extends BaseLogin {
 
     @Test(priority = 1)
@@ -22,9 +25,10 @@ public class GenderTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String gender = testData.getGender();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
@@ -33,7 +37,7 @@ public class GenderTypeTest extends BaseLogin {
         Commons.enter(driver, By.xpath(locators.getProperty("gender_type_data_input_value")), gender);
         Commons.click(driver, By.xpath(locators.getProperty("save_button")));
 
-        String tableXPath = locators.getProperty("gender_table");
+        String tableXPath = locators.getProperty("table");
         By newEntry = By.xpath("//tr[td[contains(text(),'" + gender + "')]]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
 
@@ -47,14 +51,15 @@ public class GenderTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String gender = testData.getGender();
         String genderUpdated = testData.getGenderUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
 
-        String tableXPath = locators.getProperty("gender_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, gender);
@@ -77,13 +82,14 @@ public class GenderTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String genderUpdated = testData.getGenderUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
 
-        String tableXPath = locators.getProperty("gender_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, genderUpdated);

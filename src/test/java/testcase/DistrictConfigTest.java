@@ -2,11 +2,13 @@ package testcase;
 
 import base.BaseLogin;
 import base.DriverManager;
+import listeners.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.Commons;
 
@@ -14,6 +16,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+@Listeners(TestListener.class)
 public class DistrictConfigTest extends BaseLogin {
 
     @Test(priority = 1)
@@ -22,16 +25,17 @@ public class DistrictConfigTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String district = testData.getDistrict();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("district_config")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("district_input_field")), district);
         Commons.click(driver, By.xpath(locators.getProperty("save_button")));
 
-        String tableXPath = locators.getProperty("district_table");
+        String tableXPath = locators.getProperty("table");
         By newEntry = By.xpath("//tr[td[contains(text(),'" + district + "')]]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
 
@@ -45,13 +49,14 @@ public class DistrictConfigTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String district = testData.getDistrict();
         String districtUpdated = testData.getDistrictUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("district_config")));
-        String tableXPath = locators.getProperty("district_table");
+        String tableXPath = locators.getProperty("table");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, district);
@@ -73,12 +78,13 @@ public class DistrictConfigTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String districtUpdated = testData.getDistrictUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("district_config")));
-        String tableXPath = locators.getProperty("district_table");
+        String tableXPath = locators.getProperty("table");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, districtUpdated);

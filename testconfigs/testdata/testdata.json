@@ -34,5 +34,8 @@
   "genderType": "AutoTestGender",
   "genderTypeUpdated": "AutoTestGenderUpdated",
   "group": "AutoTestGroup",
-  "groupUpdated": "AutoTestGroupUpdated"
+  "groupUpdated": "AutoTestGroupUpdated",
+  "portalUserName" : "AutoPortalUser",
+  "portalUserEmail" : "autoportal@gmail.com",
+  "portalUserNameUpdated" : "AutoPortalUserUpdated"
 }

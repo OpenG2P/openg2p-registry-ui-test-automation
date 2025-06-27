@@ -2,11 +2,13 @@ package testcase;
 
 import base.BaseLogin;
 import base.DriverManager;
+import listeners.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.Commons;
 
@@ -14,6 +16,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+@Listeners(TestListener.class)
 public class IdTypeTest extends BaseLogin {
 
     @Test(priority = 1)
@@ -22,16 +25,17 @@ public class IdTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String idType = testData.getIdType();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("configurations_data_input")), idType);
         Commons.click(driver, By.xpath(locators.getProperty("save_button")));
 
-        String tableXPath = locators.getProperty("idtype_table");
+        String tableXPath = locators.getProperty("table");
         By newEntry = By.xpath("//tr[td[contains(text(),'" + idType + "')]]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
 
@@ -45,14 +49,15 @@ public class IdTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String idType = testData.getIdType();
         String idTypeUpdated = testData.getIdTypeUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
 
-        String tableXPath = locators.getProperty("idtype_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, idType);
@@ -74,13 +79,14 @@ public class IdTypeTest extends BaseLogin {
         Properties locators = getLocators();
         login();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String idTypeUpdated = testData.getIdTypeUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
 
-        String tableXPath = locators.getProperty("idtype_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, idTypeUpdated);

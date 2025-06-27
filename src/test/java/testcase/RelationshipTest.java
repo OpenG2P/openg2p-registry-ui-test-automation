@@ -2,18 +2,20 @@ package testcase;
 
 import base.BaseLogin;
 import base.DriverManager;
+import listeners.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.Commons;
 
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-
+@Listeners(TestListener.class)
 public class RelationshipTest extends BaseLogin {
 
     @Test(priority = 1)
@@ -22,10 +24,11 @@ public class RelationshipTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String relation = testData.getRelationName();
         String relationInverse = testData.getRelationInverseName();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("relationship")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
@@ -36,7 +39,7 @@ public class RelationshipTest extends BaseLogin {
         Commons.dropDownByValue(driver, By.xpath(locators.getProperty("destination_partner_type_dropdown")), "Individual");
         Commons.click(driver, By.xpath(locators.getProperty("save_relationship")));
 
-        String tableXPath = locators.getProperty("relation_table");
+        String tableXPath = locators.getProperty("table");
         By newEntry = By.xpath("//tr[td[contains(text(),'" + relation + "')]]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
 
@@ -50,14 +53,15 @@ public class RelationshipTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String relation = testData.getRelationName();
         String relationUpdated = testData.getRelationNameUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("relationship")));
 
-        String tableXPath = locators.getProperty("relation_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, relation);
@@ -79,13 +83,14 @@ public class RelationshipTest extends BaseLogin {
         login();
         Properties locators = getLocators();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String relationUpdated = testData.getRelationNameUpdated();
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("relationship")));
 
-        String tableXPath = locators.getProperty("relation_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, relationUpdated);

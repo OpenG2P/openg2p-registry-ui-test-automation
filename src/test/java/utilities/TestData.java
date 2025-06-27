@@ -7,6 +7,10 @@ import java.util.Collections;
 import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class TestData {
+
+
+    private String portalUserName;
+    private String portalUserEmail;
     private String idType;
     private String registrantTag;
     private String gender;
@@ -29,6 +33,31 @@ public class TestData {
     private String income;
     private String address;
     private String genderType;
+
+    public String getPortalUserNameUpdated() {
+        return portalUserNameUpdated;
+    }
+
+    public void setPortalUserNameUpdated(String portalUserNameUpdated) {
+        this.portalUserNameUpdated = portalUserNameUpdated;
+    }
+
+    private String portalUserNameUpdated;
+    public String getPortalUserName() {
+        return portalUserName;
+    }
+
+    public void setPortalUserName(String portalUserName) {
+        this.portalUserName = portalUserName;
+    }
+
+    public String getPortalUserEmail() {
+        return portalUserEmail;
+    }
+
+    public void setPortalUserEmail(String portalUserEmail) {
+        this.portalUserEmail = portalUserEmail;
+    }
 
     public String getGroupUpdated() {
         return groupUpdated;
