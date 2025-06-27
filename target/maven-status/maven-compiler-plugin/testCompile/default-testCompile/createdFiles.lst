@@ -9,6 +9,7 @@ base\DriverManager.class
 testcase\GenderTypeTest.class
 testcase\GroupTypeTest.class
 testcase\RegionTest.class
+testcase\RegistrationPortalUserTest.class
 base\DriverCreator.class
 testcase\IndividualTest.class
 testcase\RelationshipTest.class

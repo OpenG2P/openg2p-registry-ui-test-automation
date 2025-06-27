@@ -55,7 +55,7 @@ public class IndividualTest extends BaseLogin {
         Commons.click(driver, By.xpath(locators.getProperty("save")));
         Commons.click(driver, By.xpath(locators.getProperty("individuals")));
 
-        String tableXPath = locators.getProperty("individual_table");
+        String tableXPath = locators.getProperty("table");
         By newEntry = By.xpath("//tr[td[contains(text(),'" + fullName + "')]]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, fullName);
@@ -79,7 +79,7 @@ public class IndividualTest extends BaseLogin {
         String updatedFullName = getIndividualFullName(familyName, givenNameUpdated, additionalName);
 
         Commons.click(driver, By.xpath(locators.getProperty("individuals")));
-        String tableXPath = locators.getProperty("individual_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryClicked = Commons.clickEntryInPaginatedTable(driver, tableXPath, fullName);
@@ -110,7 +110,7 @@ public class IndividualTest extends BaseLogin {
         String updatedFullName = getIndividualFullName(familyName, givenNameUpdated, additionalName);
 
         Commons.click(driver, By.xpath(locators.getProperty("individuals")));
-        String tableXPath = locators.getProperty("individual_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, updatedFullName);

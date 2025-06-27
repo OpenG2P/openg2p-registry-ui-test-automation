@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="523.648" tests="32" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="289.34" tests="32" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Yashavant.Naik\AppData\Local\Temp\surefire13276440853199761547\surefirebooter-20250625110808931_3.jar C:\Users\Yashavant.Naik\AppData\Local\Temp\surefire13276440853199761547 2025-06-25T11-08-08_556-jvmRun1 surefire-20250625110808931_1tmp surefire_0-20250625110808931_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Yashavant.Naik\AppData\Local\Temp\surefire10778244212153390922\surefirebooter-20250626193905747_3.jar C:\Users\Yashavant.Naik\AppData\Local\Temp\surefire10778244212153390922 2025-06-26T19-39-05_458-jvmRun1 surefire-20250626193905747_1tmp surefire_0-20250626193905747_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\OpenG2P-SR Automation\openg2p-social-registry-ui-test-automation\target\test-classes;D:\OpenG2P-SR Automation\openg2p-social-registry-ui-test-automation\target\classes;C:\Users\Yashavant.Naik\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Yashavant.Naik\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Yashavant.Naik\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Yashavant.Naik\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Yashavant.Naik\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Yashavant.Naik\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Yashavant.Naik\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Yashavant.Naik\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Yashavant.Naik\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-http\4.11.0\selenium-http-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\Yashavant.Naik\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Yashavant.Naik\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Yashavant.Naik\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Yashavant.Naik\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Yashavant.Naik\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Yashavant.Naik\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Yashavant.Naik\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\Yashavant.Naik\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\Yashavant.Naik\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\Yashavant.Naik\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\Yashavant.Naik\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Yashavant.Naik\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Yashavant.Naik\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Yashavant.Naik\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\Yashavant.Naik\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\Yashavant.Naik\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Yashavant.Naik\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Yashavant.Naik\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Yashavant.Naik\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Yashavant.Naik\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Yashavant.Naik\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Yashavant.Naik\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Yashavant.Naik\.m2\repository\com\github\gv2011\logback\logback-classic\1.3.5\logback-classic-1.3.5.jar;C:\Users\Yashavant.Naik\.m2\repository\com\github\gv2011\logback\logback-core\1.3.5\logback-core-1.3.5.jar;C:\Users\Yashavant.Naik\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\Yashavant.Naik\.m2\repository\org\codehaus\janino\janino\3.1.3\janino-3.1.3.jar;C:\Users\Yashavant.Naik\.m2\repository\org\codehaus\janino\commons-compiler\3.1.3\commons-compiler-3.1.3.jar;C:\Users\Yashavant.Naik\.m2\repository\com\sun\mail\mailapi\2.0.0\mailapi-2.0.0.jar;C:\Users\Yashavant.Naik\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Yashavant.Naik\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.22.0\log4j-slf4j-impl-2.22.0.jar;C:\Users\Yashavant.Naik\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\Yashavant.Naik\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Yashavant.Naik\AppData\Local\Temp\surefire13276440853199761547\surefirebooter-20250625110808931_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Yashavant.Naik\AppData\Local\Temp\surefire10778244212153390922\surefirebooter-20250626193905747_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -57,228 +57,224 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="resetPassword" classname="testcase.LoginPageTest" time="17.279">
-    <system-err><![CDATA[Jun 25, 2025 11:08:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="individualCreation" classname="testcase.IndividualTest" time="19.296">
+    <system-err><![CDATA[Jun 26, 2025 7:39:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:08:13 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:39:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 137
+Jun 26, 2025 7:39:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 26, 2025 7:39:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="loginTest" classname="testcase.LoginPageTest" time="9.541">
-    <system-err><![CDATA[Jun 25, 2025 11:08:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="individualUpdation" classname="testcase.IndividualTest" time="3.829">
+    <system-err><![CDATA[Jun 26, 2025 7:41:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:08:32 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:41:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="individualCreation" classname="testcase.IndividualTest" time="15.13">
-    <system-err><![CDATA[Jun 25, 2025 11:08:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="individualDeletion" classname="testcase.IndividualTest" time="10.154">
+    <system-err><![CDATA[Jun 26, 2025 7:42:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:08:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:42:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="individualUpdation" classname="testcase.IndividualTest" time="12.42">
-    <system-err><![CDATA[Jun 25, 2025 11:11:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="resetPassword" classname="testcase.LoginPageTest" time="21.16"/>
+  <testcase name="loginTest" classname="testcase.LoginPageTest" time="11.849">
+    <system-err><![CDATA[Jun 26, 2025 7:39:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:11:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:39:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 26, 2025 7:39:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 137
+Jun 26, 2025 7:39:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="individualDeletion" classname="testcase.IndividualTest" time="15.785">
-    <system-err><![CDATA[Jun 25, 2025 11:13:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupCreation" classname="testcase.GroupTest" time="5.908">
+    <system-err><![CDATA[Jun 26, 2025 7:39:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:13:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:39:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupCreation" classname="testcase.GroupTest" time="14.269">
-    <system-err><![CDATA[Jun 25, 2025 11:09:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupUpdation" classname="testcase.GroupTest" time="7.867">
+    <system-err><![CDATA[Jun 26, 2025 7:41:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:09:01 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:41:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupUpdation" classname="testcase.GroupTest" time="16.093">
-    <system-err><![CDATA[Jun 25, 2025 11:11:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupDeletion" classname="testcase.GroupTest" time="3.775">
+    <system-err><![CDATA[Jun 26, 2025 7:42:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:11:36 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:42:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupDeletion" classname="testcase.GroupTest" time="16.255">
-    <system-err><![CDATA[Jun 25, 2025 11:14:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="genderTypeCreation" classname="testcase.GenderTypeTest" time="4.832">
+    <system-err><![CDATA[Jun 26, 2025 7:39:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:14:06 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:39:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="genderTypeCreation" classname="testcase.GenderTypeTest" time="15.359">
-    <system-err><![CDATA[Jun 25, 2025 11:09:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="genderTypeUpdation" classname="testcase.GenderTypeTest" time="2.164">
+    <system-err><![CDATA[Jun 26, 2025 7:41:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:09:17 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:41:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="genderTypeUpdation" classname="testcase.GenderTypeTest" time="12.757">
-    <system-err><![CDATA[Jun 25, 2025 11:11:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="genderTypeDeletion" classname="testcase.GenderTypeTest" time="9.642">
+    <system-err><![CDATA[Jun 26, 2025 7:42:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:11:53 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:42:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="genderTypeDeletion" classname="testcase.GenderTypeTest" time="16.501">
-    <system-err><![CDATA[Jun 25, 2025 11:14:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupMembershipKindCreation" classname="testcase.GroupMembershipKindTest" time="7.749">
+    <system-err><![CDATA[Jun 26, 2025 7:40:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:14:24 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:40:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupMembershipKindCreation" classname="testcase.GroupMembershipKindTest" time="13.032">
-    <system-err><![CDATA[Jun 25, 2025 11:09:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupMembershipKindUpdation" classname="testcase.GroupMembershipKindTest" time="7.828">
+    <system-err><![CDATA[Jun 26, 2025 7:41:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:09:34 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:41:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupMembershipKindUpdation" classname="testcase.GroupMembershipKindTest" time="13.137">
-    <system-err><![CDATA[Jun 25, 2025 11:12:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupMembershipKindDeletion" classname="testcase.GroupMembershipKindTest" time="4.06">
+    <system-err><![CDATA[Jun 26, 2025 7:42:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:12:08 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:42:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupMembershipKindDeletion" classname="testcase.GroupMembershipKindTest" time="15.545">
-    <system-err><![CDATA[Jun 25, 2025 11:14:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupTypeCreation" classname="testcase.GroupTypeTest" time="4.305">
+    <system-err><![CDATA[Jun 26, 2025 7:40:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:14:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:40:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupTypeCreation" classname="testcase.GroupTypeTest" time="12.746">
-    <system-err><![CDATA[Jun 25, 2025 11:09:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupTypeUpdation" classname="testcase.GroupTypeTest" time="4.746">
+    <system-err><![CDATA[Jun 26, 2025 7:41:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:09:49 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:41:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupTypeUpdation" classname="testcase.GroupTypeTest" time="12.511">
-    <system-err><![CDATA[Jun 25, 2025 11:12:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="groupTypeDeletion" classname="testcase.GroupTypeTest" time="9.177">
+    <system-err><![CDATA[Jun 26, 2025 7:42:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:12:23 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:42:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="groupTypeDeletion" classname="testcase.GroupTypeTest" time="14.723">
-    <system-err><![CDATA[Jun 25, 2025 11:15:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="idTypeCreation" classname="testcase.IdTypeTest" time="6.947">
+    <system-err><![CDATA[Jun 26, 2025 7:40:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:15:00 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:40:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="idTypeCreation" classname="testcase.IdTypeTest" time="13.098">
-    <system-err><![CDATA[Jun 25, 2025 11:10:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="idTypeUpdation" classname="testcase.IdTypeTest" time="4.916">
+    <system-err><![CDATA[Jun 26, 2025 7:41:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:10:03 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:41:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="idTypeUpdation" classname="testcase.IdTypeTest" time="13.256">
-    <system-err><![CDATA[Jun 25, 2025 11:12:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="idTypeDeletion" classname="testcase.IdTypeTest" time="6.11">
+    <system-err><![CDATA[Jun 26, 2025 7:43:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:12:38 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:43:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="idTypeDeletion" classname="testcase.IdTypeTest" time="17.589">
-    <system-err><![CDATA[Jun 25, 2025 11:15:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="regionCreation" classname="testcase.RegionTest" time="3.3">
+    <system-err><![CDATA[Jun 26, 2025 7:40:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:15:16 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:40:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="regionCreation" classname="testcase.RegionTest" time="13.431">
-    <system-err><![CDATA[Jun 25, 2025 11:10:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="regionUpdation" classname="testcase.RegionTest" time="5.25">
+    <system-err><![CDATA[Jun 26, 2025 7:41:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:10:18 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:41:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="regionUpdation" classname="testcase.RegionTest" time="11.28">
-    <system-err><![CDATA[Jun 25, 2025 11:12:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="regionDeletion" classname="testcase.RegionTest" time="9.112">
+    <system-err><![CDATA[Jun 26, 2025 7:43:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:12:53 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:43:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="regionDeletion" classname="testcase.RegionTest" time="17.696">
-    <system-err><![CDATA[Jun 25, 2025 11:15:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="registrantTagCreation" classname="testcase.RegistrantTagsTest" time="8.576">
+    <system-err><![CDATA[Jun 26, 2025 7:40:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:15:36 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:40:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="registrantTagCreation" classname="testcase.RegistrantTagsTest" time="13.405">
-    <system-err><![CDATA[Jun 25, 2025 11:10:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="registrantTagUpdation" classname="testcase.RegistrantTagsTest" time="6.243">
+    <system-err><![CDATA[Jun 26, 2025 7:41:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:10:33 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:41:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="registrantTagUpdation" classname="testcase.RegistrantTagsTest" time="12.878">
-    <system-err><![CDATA[Jun 25, 2025 11:13:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="registrantTagDeletion" classname="testcase.RegistrantTagsTest" time="4.735">
+    <system-err><![CDATA[Jun 26, 2025 7:43:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:13:06 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:43:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="registrantTagDeletion" classname="testcase.RegistrantTagsTest" time="18.506">
-    <system-err><![CDATA[Jun 25, 2025 11:15:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="relationshipsCreation" classname="testcase.RelationshipTest" time="6.095">
+    <system-err><![CDATA[Jun 26, 2025 7:40:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:15:56 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:40:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="relationshipsCreation" classname="testcase.RelationshipTest" time="15.365">
-    <system-err><![CDATA[Jun 25, 2025 11:10:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="relationshipUpdation" classname="testcase.RelationshipTest" time="6.624">
+    <system-err><![CDATA[Jun 26, 2025 7:42:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:10:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:42:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="relationshipUpdation" classname="testcase.RelationshipTest" time="10.671">
-    <system-err><![CDATA[Jun 25, 2025 11:13:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="relationshipDeletion" classname="testcase.RelationshipTest" time="10.476">
+    <system-err><![CDATA[Jun 26, 2025 7:43:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:13:20 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:43:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="relationshipDeletion" classname="testcase.RelationshipTest" time="17.414">
-    <system-err><![CDATA[Jun 25, 2025 11:16:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="districtConfigCreation" classname="testcase.DistrictConfigTest" time="7.487">
+    <system-err><![CDATA[Jun 26, 2025 7:40:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:16:17 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:40:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="districtConfigCreation" classname="testcase.DistrictConfigTest" time="13.607">
-    <system-err><![CDATA[Jun 25, 2025 11:11:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="districtConfigUpdation" classname="testcase.DistrictConfigTest" time="5.206">
+    <system-err><![CDATA[Jun 26, 2025 7:42:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:11:05 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 26, 2025 7:42:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="districtConfigUpdation" classname="testcase.DistrictConfigTest" time="13.266">
-    <system-err><![CDATA[Jun 25, 2025 11:13:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:13:33 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="districtConfigDeletion" classname="testcase.DistrictConfigTest" time="15.93">
-    <system-err><![CDATA[Jun 25, 2025 11:16:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 137
-Jun 25, 2025 11:16:36 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
+  <testcase name="districtConfigDeletion" classname="testcase.DistrictConfigTest" time="19.178"/>
 </testsuite>

@@ -2,11 +2,13 @@ package testcase;
 
 import base.BaseLogin;
 import base.DriverManager;
+import listeners.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.Commons;
 
@@ -14,6 +16,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+@Listeners(TestListener.class)
 public class GroupMembershipKindTest extends BaseLogin {
 
     @Test(priority = 1)
@@ -32,7 +35,7 @@ public class GroupMembershipKindTest extends BaseLogin {
         Commons.enter(driver, By.xpath(locators.getProperty("group_membership_kind_data_input")), groupMembershipKind);
         Commons.click(driver, By.xpath(locators.getProperty("save_button")));
 
-        String tableXPath = locators.getProperty("group_membership_kind_table");
+        String tableXPath = locators.getProperty("table");
         By newEntry = By.xpath("//tr[td[contains(text(),'" + groupMembershipKind + "')]]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, groupMembershipKind);
@@ -53,7 +56,7 @@ public class GroupMembershipKindTest extends BaseLogin {
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("group_membership_kind")));
 
-        String tableXPath = locators.getProperty("group_membership_kind_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, groupMembershipKind);
@@ -82,7 +85,7 @@ public class GroupMembershipKindTest extends BaseLogin {
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
         Commons.click(driver, By.xpath(locators.getProperty("group_membership_kind")));
 
-        String tableXPath = locators.getProperty("group_membership_kind_table");
+        String tableXPath = locators.getProperty("table");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
 
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, groupMembershipKindUpdated);

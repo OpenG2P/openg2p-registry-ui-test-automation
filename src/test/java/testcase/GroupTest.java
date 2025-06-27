@@ -39,7 +39,7 @@ public class GroupTest extends BaseLogin {
         Commons.click(driver, By.xpath(locators.getProperty("save")));
 
         Commons.click(driver, By.xpath(locators.getProperty("groups")));
-        String tableXPath = locators.getProperty("group_table");
+        String tableXPath = locators.getProperty("table");
         By newEntry = By.xpath("//tr[td[contains(text(),'" + groupName + "')]]");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(newEntry));
@@ -58,7 +58,7 @@ public class GroupTest extends BaseLogin {
         String groupNameUpdated = testData.getGroupNameUpdated();
 
         Commons.click(driver, By.xpath(locators.getProperty("group")));
-        String tableXPath = locators.getProperty("group_table");
+        String tableXPath = locators.getProperty("table");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryClicked = Commons.clickEntryInPaginatedTable(driver, tableXPath, groupName);
@@ -84,7 +84,7 @@ public class GroupTest extends BaseLogin {
         String groupNameUpdated = testData.getGroupNameUpdated();
 
         Commons.click(driver, By.xpath(locators.getProperty("group")));
-        String tableXPath = locators.getProperty("group_table");
+        String tableXPath = locators.getProperty("table");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryFound = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, groupNameUpdated);
