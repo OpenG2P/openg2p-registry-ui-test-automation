@@ -26,16 +26,16 @@ public class GroupTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupName = testData.getGroupName();
+        String groupName = getTestData().getGroupName();
 
         Commons.click(driver, By.xpath(locators.getProperty("group")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("group_name_field")), groupName);
-        Commons.dropDownByValue(driver, By.id(locators.getProperty("tags")), testData.getTags());
-        Commons.dropDownByValue(driver, By.id(locators.getProperty("kind")), testData.getGroupMembershipKind());
+        Commons.dropDownByValue(driver, By.id(locators.getProperty("tags")), getTestData().getTags());
+        Commons.dropDownByValue(driver, By.id(locators.getProperty("kind")), getTestData().getGroupMembershipKind());
         Commons.click(driver, By.xpath(locators.getProperty("contact_details")));
-        Commons.enter(driver, By.id(locators.getProperty("address")), testData.getAddress());
-        Commons.dropDownByValue(driver, By.id(locators.getProperty("region_dropdown")), testData.getRegion());
+        Commons.enter(driver, By.id(locators.getProperty("address")), getTestData().getAddress());
+        Commons.dropDownByValue(driver, By.id(locators.getProperty("region_dropdown")), getTestData().getRegion());
         Commons.click(driver, By.xpath(locators.getProperty("save")));
 
         Commons.click(driver, By.xpath(locators.getProperty("groups")));
@@ -54,8 +54,8 @@ public class GroupTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupName = testData.getGroupName();
-        String groupNameUpdated = testData.getGroupNameUpdated();
+        String groupName = getTestData().getGroupName();
+        String groupNameUpdated = getTestData().getGroupNameUpdated();
 
         Commons.click(driver, By.xpath(locators.getProperty("group")));
         String tableXPath = locators.getProperty("table");
@@ -81,7 +81,7 @@ public class GroupTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupNameUpdated = testData.getGroupNameUpdated();
+        String groupNameUpdated = getTestData().getGroupNameUpdated();
 
         Commons.click(driver, By.xpath(locators.getProperty("group")));
         String tableXPath = locators.getProperty("table");

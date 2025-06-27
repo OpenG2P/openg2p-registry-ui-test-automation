@@ -25,8 +25,8 @@ public class RelationshipTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String relation = testData.getRelationName();
-        String relationInverse = testData.getRelationInverseName();
+        String relation = getTestData().getRelationName();
+        String relationInverse = getTestData().getRelationInverseName();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -54,8 +54,8 @@ public class RelationshipTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String relation = testData.getRelationName();
-        String relationUpdated = testData.getRelationNameUpdated();
+        String relation = getTestData().getRelationName();
+        String relationUpdated = getTestData().getRelationNameUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -84,7 +84,7 @@ public class RelationshipTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String relationUpdated = testData.getRelationNameUpdated();
+        String relationUpdated = getTestData().getRelationNameUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));

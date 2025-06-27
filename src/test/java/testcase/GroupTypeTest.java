@@ -26,7 +26,7 @@ public class GroupTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupType = testData.getGroupType();
+        String groupType = getTestData().getGroupType();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -50,8 +50,8 @@ public class GroupTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupType = testData.getGroupType();
-        String groupTypeUpdated = testData.getGroupTypeUpdated();
+        String groupType = getTestData().getGroupType();
+        String groupTypeUpdated = getTestData().getGroupTypeUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -79,7 +79,7 @@ public class GroupTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupTypeUpdated = testData.getGroupTypeUpdated();
+        String groupTypeUpdated = getTestData().getGroupTypeUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));

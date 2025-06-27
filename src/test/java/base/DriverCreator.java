@@ -2,14 +2,10 @@ package base;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.edge.*;
+import org.openqa.selenium.firefox.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
@@ -25,83 +21,89 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class DriverCreator {
-    private  final Logger logger = LoggerFactory.getLogger(DriverCreator.class);
 
-    public  Properties properties = new Properties();
-    public  Properties locators = new Properties();
-    public  Properties headless = new Properties();
-    public  FileReader fileReader1;
-    public  FileReader fileReader2;
-    public  FileReader fileReader3;
-    public  TestData testData;
+    private final Logger logger = LoggerFactory.getLogger(DriverCreator.class);
+
+    protected static final ThreadLocal<TestData> threadTestData = new ThreadLocal<>();
+    protected static final ThreadLocal<Properties> threadProperties = ThreadLocal.withInitial(Properties::new);
+    protected static final ThreadLocal<Properties> threadLocators = ThreadLocal.withInitial(Properties::new);
+    protected static final ThreadLocal<Properties> threadHeadless = ThreadLocal.withInitial(Properties::new);
 
     @BeforeClass
     public void importTestData() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        testData = objectMapper.readValue(new File("testconfigs/testdata/testdata.json"), TestData.class);
+        TestData data = objectMapper.readValue(new File("testconfigs/testdata/testdata.json"), TestData.class);
+        threadTestData.set(data);
     }
 
     @BeforeMethod
     public void setup() throws IOException {
         logger.info("Setup action initiated");
 
-        if (properties.isEmpty()) {
-            fileReader1 = new FileReader("testconfigs/configfile/config.properties");
-            fileReader2 = new FileReader("src/main/resources/configfiles/locators.properties");
-            fileReader3 = new FileReader("testconfigs/configfile/headless.properties");
+        Properties properties = new Properties();
+        Properties locators = new Properties();
+        Properties headless = new Properties();
+
+        try (
+                FileReader fileReader1 = new FileReader("testconfigs/configfile/config.properties");
+                FileReader fileReader2 = new FileReader("src/main/resources/configfiles/locators.properties");
+                FileReader fileReader3 = new FileReader("testconfigs/configfile/headless.properties")
+        ) {
             properties.load(fileReader1);
             locators.load(fileReader2);
             headless.load(fileReader3);
         }
 
+        threadProperties.set(properties);
+        threadLocators.set(locators);
+        threadHeadless.set(headless);
+
         WebDriver driver;
 
-        if (properties.getProperty("browser").equalsIgnoreCase("chrome")) {
-            ChromeOptions options = new ChromeOptions();
-            boolean isHeadless = headless.getProperty("headless").equalsIgnoreCase("true");
-            if (isHeadless) {
-                options.addArguments("--headless");
-                options.addArguments("--window-size=1920,1080");
-                options.addArguments("--force-device-scale-factor=1");
-                options.addArguments("--disable-gpu");
-            }
+        String browser = properties.getProperty("browser");
+        boolean isHeadless = headless.getProperty("headless").equalsIgnoreCase("true");
 
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver(options);
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                if (isHeadless) {
+                    chromeOptions.addArguments("--headless=new", "--window-size=1920,1080", "--disable-gpu");
+                }
+                driver = new ChromeDriver(chromeOptions);
+                break;
 
-            if (isHeadless) {
-                driver.manage().window().setSize(new Dimension(1920, 1080));
-            } else {
-                driver.manage().window().maximize();
-            }
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                if (isHeadless) {
+                    firefoxOptions.addArguments("--headless");
+                }
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
 
-        } else if (properties.getProperty("browser").equalsIgnoreCase("firefox")) {
-            FirefoxOptions options = new FirefoxOptions();
-            if (headless.getProperty("headless").equalsIgnoreCase("true")) {
-                options.addArguments("--headless");
-            }
+            case "edge":
+                WebDriverManager.edgedriver().setup();
+                EdgeOptions edgeOptions = new EdgeOptions();
+                if (isHeadless) {
+                    edgeOptions.addArguments("--headless");
+                }
+                driver = new EdgeDriver(edgeOptions);
+                break;
 
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver(options);
-            driver.manage().window().maximize();
+            default:
+                throw new IllegalArgumentException("Unsupported browser: " + browser);
+        }
 
-        } else if (properties.getProperty("browser").equalsIgnoreCase("edge")) {
-            EdgeOptions options = new EdgeOptions();
-            if (headless.getProperty("headless").equalsIgnoreCase("true")) {
-                options.addArguments("--headless");
-            }
-
-            WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver(options);
-            driver.manage().window().maximize();
-
+        if (isHeadless) {
+            driver.manage().window().setSize(new Dimension(1920, 1080));
         } else {
-            throw new IllegalArgumentException("Unsupported browser: " + properties.getProperty("browser"));
+            driver.manage().window().maximize();
         }
 
         DriverManager.setDriver(driver);
         driver.get(properties.getProperty("openg2purl"));
-        logger.info("Driver has been created successfully");
+        logger.info("Driver created and navigated to base URL");
     }
 
     @AfterMethod
@@ -110,7 +112,18 @@ public class DriverCreator {
         if (result.getStatus() == ITestResult.FAILURE) {
             ScreenshotUtil.attachScreenshotToAllure(driver, result.getName());
         }
-
         DriverManager.quitDriver();
+    }
+
+    protected TestData getTestData() {
+        return threadTestData.get();
+    }
+
+    protected Properties getConfig() {
+        return threadProperties.get();
+    }
+
+    protected Properties getLocators() {
+        return threadLocators.get();
     }
 }

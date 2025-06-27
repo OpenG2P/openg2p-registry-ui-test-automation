@@ -26,7 +26,7 @@ public class IdTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String idType = testData.getIdType();
+        String idType = getTestData().getIdType();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -50,8 +50,8 @@ public class IdTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String idType = testData.getIdType();
-        String idTypeUpdated = testData.getIdTypeUpdated();
+        String idType = getTestData().getIdType();
+        String idTypeUpdated = getTestData().getIdTypeUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -80,7 +80,7 @@ public class IdTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String idTypeUpdated = testData.getIdTypeUpdated();
+        String idTypeUpdated = getTestData().getIdTypeUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));

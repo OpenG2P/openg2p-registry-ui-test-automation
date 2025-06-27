@@ -4,37 +4,14 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
 public class BaseLogin extends DriverCreator {
 
-    private static final ThreadLocal<Properties> threadConfig = ThreadLocal.withInitial(Properties::new);
-    private static final ThreadLocal<Properties> threadLocators = ThreadLocal.withInitial(Properties::new);
-
-    protected Properties getConfig() {
-        return threadConfig.get();
-    }
-
-    protected Properties getLocators() {
-        return threadLocators.get();
-    }
-
-    protected void loadConfigs() throws IOException {
-        try (
-                FileReader configReader = new FileReader("testconfigs/configfile/config.properties");
-                FileReader locatorsReader = new FileReader("src/main/resources/configfiles/locators.properties")
-        ) {
-            threadConfig.get().load(configReader);
-            threadLocators.get().load(locatorsReader);
-        }
-    }
-
     public void loginPage() throws IOException {
         WebDriver driver = DriverManager.getDriver();
-        loadConfigs();
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -50,8 +27,6 @@ public class BaseLogin extends DriverCreator {
 
     public void login() throws IOException {
         WebDriver driver = DriverManager.getDriver();
-        loadConfigs();
-
         Properties config = getConfig();
         Properties locators = getLocators();
 

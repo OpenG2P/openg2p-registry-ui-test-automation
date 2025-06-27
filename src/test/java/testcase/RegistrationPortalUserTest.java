@@ -27,8 +27,8 @@ public class RegistrationPortalUserTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String portalUserName = testData.getPortalUserName();
-        String portalUserEmail = testData.getPortalUserEmail();
+        String portalUserName = getTestData().getPortalUserName();
+        String portalUserEmail = getTestData().getPortalUserEmail();
         Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
         Commons.click(driver,By.xpath(locators.getProperty("registration_portal_user_dropdown")));
         Commons.click(driver,By.xpath(locators.getProperty("new_button")));
@@ -50,7 +50,7 @@ public class RegistrationPortalUserTest extends BaseLogin {
         login();
         Properties locators = getLocators();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String portalUserName = testData.getPortalUserName();
+        String portalUserName = getTestData().getPortalUserName();
         Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
         Commons.click(driver,By.xpath(locators.getProperty("registration_portal_user_dropdown")));
         Commons.click(driver,By.xpath(locators.getProperty("list_view")));
@@ -73,7 +73,7 @@ public class RegistrationPortalUserTest extends BaseLogin {
         login();
         Properties locators = getLocators();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String portalUserName = testData.getPortalUserName();
+        String portalUserName = getTestData().getPortalUserName();
         Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
         Commons.click(driver,By.xpath(locators.getProperty("registration_portal_user_dropdown")));
         Commons.click(driver,By.xpath(locators.getProperty("list_view")));
@@ -95,8 +95,8 @@ public class RegistrationPortalUserTest extends BaseLogin {
         login();
         Properties locators = getLocators();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String portalUserName = testData.getPortalUserName();
-        String portalUserNameUpdated = testData.getPortalUserNameUpdated();
+        String portalUserName = getTestData().getPortalUserName();
+        String portalUserNameUpdated = getTestData().getPortalUserNameUpdated();
         Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
         Commons.click(driver,By.xpath(locators.getProperty("registration_portal_user_dropdown")));
         Commons.click(driver,By.xpath(locators.getProperty("list_view")));

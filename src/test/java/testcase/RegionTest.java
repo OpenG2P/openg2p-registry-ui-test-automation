@@ -25,7 +25,7 @@ public class RegionTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String region = testData.getRegion();
+        String region = getTestData().getRegion();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -49,8 +49,8 @@ public class RegionTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String region = testData.getRegion();
-        String regionUpdated = testData.getRegionUpdated();
+        String region = getTestData().getRegion();
+        String regionUpdated = getTestData().getRegionUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -78,7 +78,7 @@ public class RegionTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String regionUpdated = testData.getRegionUpdated();
+        String regionUpdated = getTestData().getRegionUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));

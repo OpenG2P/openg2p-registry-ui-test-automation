@@ -26,7 +26,7 @@ public class GroupMembershipKindTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupMembershipKind = testData.getGroupMembershipKind();
+        String groupMembershipKind = getTestData().getGroupMembershipKind();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -49,8 +49,8 @@ public class GroupMembershipKindTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupMembershipKind = testData.getGroupMembershipKind();
-        String groupMembershipKindUpdated = testData.getGroupMembershipKindUpdated();
+        String groupMembershipKind = getTestData().getGroupMembershipKind();
+        String groupMembershipKindUpdated = getTestData().getGroupMembershipKindUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -79,7 +79,7 @@ public class GroupMembershipKindTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String groupMembershipKindUpdated = testData.getGroupMembershipKindUpdated();
+        String groupMembershipKindUpdated = getTestData().getGroupMembershipKindUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
