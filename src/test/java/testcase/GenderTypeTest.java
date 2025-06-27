@@ -26,7 +26,7 @@ public class GenderTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String gender = testData.getGender();
+        String gender = getTestData().getGender();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -52,8 +52,8 @@ public class GenderTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String gender = testData.getGender();
-        String genderUpdated = testData.getGenderUpdated();
+        String gender = getTestData().getGender();
+        String genderUpdated = getTestData().getGenderUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -83,7 +83,7 @@ public class GenderTypeTest extends BaseLogin {
         login();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String genderUpdated = testData.getGenderUpdated();
+        String genderUpdated = getTestData().getGenderUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));

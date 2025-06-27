@@ -25,7 +25,7 @@ public class RegistrantTagsTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String registrantTag = testData.getRegistrantTag();
+        String registrantTag = getTestData().getRegistrantTag();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -49,8 +49,8 @@ public class RegistrantTagsTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String registrantTag = testData.getRegistrantTag();
-        String registrantTagUpdated = testData.getRegistrantTagUpdated();
+        String registrantTag = getTestData().getRegistrantTag();
+        String registrantTagUpdated = getTestData().getRegistrantTagUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
@@ -78,7 +78,7 @@ public class RegistrantTagsTest extends BaseLogin {
         Properties locators = getLocators();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String registrantTagUpdated = testData.getRegistrantTagUpdated();
+        String registrantTagUpdated = getTestData().getRegistrantTagUpdated();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
         Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));

@@ -31,9 +31,9 @@ public class IndividualTest extends BaseLogin {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        String familyName = testData.getFamilyName();
-        String givenName = testData.getGivenName();
-        String additionalName = testData.getAdditionalName();
+        String familyName = getTestData().getFamilyName();
+        String givenName = getTestData().getGivenName();
+        String additionalName = getTestData().getAdditionalName();
         String fullName = getIndividualFullName(familyName, givenName, additionalName);
 
         Commons.click(driver, By.xpath(locators.getProperty("individuals")));
@@ -41,17 +41,17 @@ public class IndividualTest extends BaseLogin {
         Commons.enter(driver, By.id(locators.getProperty("family_name")), familyName);
         Commons.enter(driver, By.id(locators.getProperty("given_name")), givenName);
         Commons.enter(driver, By.id(locators.getProperty("additional_name")), additionalName);
-        Commons.dropDownByValue(driver, By.id(locators.getProperty("tags")), testData.getTags());
-        Commons.enter(driver, By.id(locators.getProperty("address")), testData.getAddress());
-        Commons.enter(driver, By.id(locators.getProperty("email")), testData.getIndividualEmail());
-        Commons.dropDownByValue(driver, By.id(locators.getProperty("district_dropdown")), testData.getDistrict());
-        Commons.dropDownByValue(driver, By.id(locators.getProperty("region_dropdown")), testData.getRegion());
-        Commons.enter(driver, By.id(locators.getProperty("birth_place")), testData.getAddress());
-        Commons.enter(driver, By.id(locators.getProperty("date_of_birth")), testData.getDOB());
-        Commons.enter(driver, By.id(locators.getProperty("civil_status")), testData.getCivilStatus());
-        Commons.enter(driver, By.id(locators.getProperty("occupation")), testData.getOccupation());
-        Commons.enter(driver, By.id(locators.getProperty("income")), testData.getIncome());
-        Commons.dropDownByValue(driver, By.id(locators.getProperty("gender_dropdown")), testData.getGender());
+        Commons.dropDownByValue(driver, By.id(locators.getProperty("tags")), getTestData().getTags());
+        Commons.enter(driver, By.id(locators.getProperty("address")), getTestData().getAddress());
+        Commons.enter(driver, By.id(locators.getProperty("email")), getTestData().getIndividualEmail());
+        Commons.dropDownByValue(driver, By.id(locators.getProperty("district_dropdown")), getTestData().getDistrict());
+        Commons.dropDownByValue(driver, By.id(locators.getProperty("region_dropdown")), getTestData().getRegion());
+        Commons.enter(driver, By.id(locators.getProperty("birth_place")), getTestData().getAddress());
+        Commons.enter(driver, By.id(locators.getProperty("date_of_birth")), getTestData().getDOB());
+        Commons.enter(driver, By.id(locators.getProperty("civil_status")), getTestData().getCivilStatus());
+        Commons.enter(driver, By.id(locators.getProperty("occupation")), getTestData().getOccupation());
+        Commons.enter(driver, By.id(locators.getProperty("income")), getTestData().getIncome());
+        Commons.dropDownByValue(driver, By.id(locators.getProperty("gender_dropdown")), getTestData().getGender());
         Commons.click(driver, By.xpath(locators.getProperty("save")));
         Commons.click(driver, By.xpath(locators.getProperty("individuals")));
 
@@ -70,10 +70,10 @@ public class IndividualTest extends BaseLogin {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        String familyName = testData.getFamilyName();
-        String givenName = testData.getGivenName();
-        String additionalName = testData.getAdditionalName();
-        String givenNameUpdated = testData.getGivenNameUpdated();
+        String familyName = getTestData().getFamilyName();
+        String givenName = getTestData().getGivenName();
+        String additionalName = getTestData().getAdditionalName();
+        String givenNameUpdated = getTestData().getGivenNameUpdated();
 
         String fullName = getIndividualFullName(familyName, givenName, additionalName);
         String updatedFullName = getIndividualFullName(familyName, givenNameUpdated, additionalName);
@@ -104,9 +104,9 @@ public class IndividualTest extends BaseLogin {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        String familyName = testData.getFamilyName();
-        String givenNameUpdated = testData.getGivenNameUpdated();
-        String additionalName = testData.getAdditionalName();
+        String familyName = getTestData().getFamilyName();
+        String givenNameUpdated = getTestData().getGivenNameUpdated();
+        String additionalName = getTestData().getAdditionalName();
         String updatedFullName = getIndividualFullName(familyName, givenNameUpdated, additionalName);
 
         Commons.click(driver, By.xpath(locators.getProperty("individuals")));
