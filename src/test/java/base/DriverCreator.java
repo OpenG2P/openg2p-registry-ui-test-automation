@@ -70,6 +70,7 @@ public class DriverCreator {
                 if (isHeadless) {
                     chromeOptions.addArguments("--headless=new", "--window-size=1920,1080", "--disable-gpu");
                 }
+                chromeOptions.addArguments("--incognito");
                 driver = new ChromeDriver(chromeOptions);
                 break;
 
