@@ -28,8 +28,8 @@ public class RelationshipTest extends BaseLogin {
         String relation = getTestData().getRelationName();
         String relationInverse = getTestData().getRelationInverseName();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration8"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration8")));
         Commons.click(driver, By.xpath(locators.getProperty("relationship")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("relationship_name_data_input")), relation);
@@ -57,8 +57,8 @@ public class RelationshipTest extends BaseLogin {
         String relation = getTestData().getRelationName();
         String relationUpdated = getTestData().getRelationNameUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration8"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration8")));
         Commons.click(driver, By.xpath(locators.getProperty("relationship")));
 
         String tableXPath = locators.getProperty("table");
@@ -86,8 +86,8 @@ public class RelationshipTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String relationUpdated = getTestData().getRelationNameUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration8"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration8")));
         Commons.click(driver, By.xpath(locators.getProperty("relationship")));
 
         String tableXPath = locators.getProperty("table");

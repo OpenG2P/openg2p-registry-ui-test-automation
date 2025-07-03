@@ -28,8 +28,8 @@ public class GenderTypeTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String gender = getTestData().getGender();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration2"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration2")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
 
@@ -55,8 +55,8 @@ public class GenderTypeTest extends BaseLogin {
         String gender = getTestData().getGender();
         String genderUpdated = getTestData().getGenderUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration2"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration2")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
 
         String tableXPath = locators.getProperty("table");
@@ -85,8 +85,8 @@ public class GenderTypeTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String genderUpdated = getTestData().getGenderUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration2"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration2")));
         Commons.click(driver, By.xpath(locators.getProperty("gender_type")));
 
         String tableXPath = locators.getProperty("table");

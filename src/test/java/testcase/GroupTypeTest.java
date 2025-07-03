@@ -28,8 +28,8 @@ public class GroupTypeTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String groupType = getTestData().getGroupType();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration4"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration4")));
         Commons.click(driver, By.xpath(locators.getProperty("group_type")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("group_type_data_input")), groupType);
@@ -53,8 +53,8 @@ public class GroupTypeTest extends BaseLogin {
         String groupType = getTestData().getGroupType();
         String groupTypeUpdated = getTestData().getGroupTypeUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration4"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration4")));
         Commons.click(driver, By.xpath(locators.getProperty("group_type")));
 
         String tableXPath = locators.getProperty("table");
@@ -81,8 +81,8 @@ public class GroupTypeTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String groupTypeUpdated = getTestData().getGroupTypeUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration4"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration4")));
         Commons.click(driver, By.xpath(locators.getProperty("group_type")));
 
         String tableXPath = locators.getProperty("table");
