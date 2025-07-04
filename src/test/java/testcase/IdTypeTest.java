@@ -28,8 +28,8 @@ public class IdTypeTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String idType = getTestData().getIdType();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration5"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration5")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("configurations_data_input")), idType);
@@ -53,8 +53,8 @@ public class IdTypeTest extends BaseLogin {
         String idType = getTestData().getIdType();
         String idTypeUpdated = getTestData().getIdTypeUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration5"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration5")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
 
         String tableXPath = locators.getProperty("table");
@@ -82,8 +82,8 @@ public class IdTypeTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String idTypeUpdated = getTestData().getIdTypeUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration5"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration5")));
         Commons.click(driver, By.xpath(locators.getProperty("id_type")));
 
         String tableXPath = locators.getProperty("table");

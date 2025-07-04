@@ -27,8 +27,8 @@ public class RegionTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String region = getTestData().getRegion();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration6"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration6")));
         Commons.click(driver, By.xpath(locators.getProperty("region")));
         Commons.click(driver, By.xpath(locators.getProperty("create_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("configurations_data_input")), region);
@@ -52,8 +52,8 @@ public class RegionTest extends BaseLogin {
         String region = getTestData().getRegion();
         String regionUpdated = getTestData().getRegionUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration6"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration6")));
         Commons.click(driver, By.xpath(locators.getProperty("region")));
         String tableXPath = locators.getProperty("table");
 
@@ -80,8 +80,8 @@ public class RegionTest extends BaseLogin {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String regionUpdated = getTestData().getRegionUpdated();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration"))));
-        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registry_configuration6"))));
+        Commons.click(driver, By.xpath(locators.getProperty("registry_configuration6")));
         Commons.click(driver, By.xpath(locators.getProperty("region")));
         String tableXPath = locators.getProperty("table");
 
