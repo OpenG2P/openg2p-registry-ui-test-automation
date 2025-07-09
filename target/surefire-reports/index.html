@@ -594,8 +594,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Social Registry Sanity Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Sanity Suite&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Social Registry Sanity Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Sanity Suite&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcase.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;testcase.IndividualTest&quot;/&gt;
@@ -649,138 +649,138 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(32);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'individualDeletion')
+data.setCell(0, 1, 'individualCreation')
 data.setCell(0, 2, 'testcase.IndividualTest')
-data.setCell(0, 3, 16183);
+data.setCell(0, 3, 22652);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'regionDeletion')
-data.setCell(1, 2, 'testcase.RegionTest')
-data.setCell(1, 3, 15857);
+data.setCell(1, 1, 'individualDeletion')
+data.setCell(1, 2, 'testcase.IndividualTest')
+data.setCell(1, 3, 19872);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'districtConfigDeletion')
-data.setCell(2, 2, 'testcase.DistrictConfigTest')
-data.setCell(2, 3, 15566);
+data.setCell(2, 1, 'relationshipsCreation')
+data.setCell(2, 2, 'testcase.RelationshipTest')
+data.setCell(2, 3, 19644);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'individualCreation')
-data.setCell(3, 2, 'testcase.IndividualTest')
-data.setCell(3, 3, 15397);
+data.setCell(3, 1, 'registrantTagCreation')
+data.setCell(3, 2, 'testcase.RegistrantTagsTest')
+data.setCell(3, 3, 18147);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'groupCreation')
-data.setCell(4, 2, 'testcase.GroupTest')
-data.setCell(4, 3, 15136);
+data.setCell(4, 1, 'districtConfigDeletion')
+data.setCell(4, 2, 'testcase.DistrictConfigTest')
+data.setCell(4, 3, 17877);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'groupMembershipKindDeletion')
-data.setCell(5, 2, 'testcase.GroupMembershipKindTest')
-data.setCell(5, 3, 15004);
+data.setCell(5, 1, 'regionDeletion')
+data.setCell(5, 2, 'testcase.RegionTest')
+data.setCell(5, 3, 17858);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'relationshipDeletion')
-data.setCell(6, 2, 'testcase.RelationshipTest')
-data.setCell(6, 3, 14825);
+data.setCell(6, 1, 'groupDeletion')
+data.setCell(6, 2, 'testcase.GroupTest')
+data.setCell(6, 3, 17579);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'groupUpdation')
-data.setCell(7, 2, 'testcase.GroupTest')
-data.setCell(7, 3, 14500);
+data.setCell(7, 1, 'groupTypeDeletion')
+data.setCell(7, 2, 'testcase.GroupTypeTest')
+data.setCell(7, 3, 17573);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'idTypeDeletion')
-data.setCell(8, 2, 'testcase.IdTypeTest')
-data.setCell(8, 3, 14319);
+data.setCell(8, 1, 'groupCreation')
+data.setCell(8, 2, 'testcase.GroupTest')
+data.setCell(8, 3, 17391);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'genderTypeDeletion')
-data.setCell(9, 2, 'testcase.GenderTypeTest')
-data.setCell(9, 3, 14174);
+data.setCell(9, 1, 'groupMembershipKindDeletion')
+data.setCell(9, 2, 'testcase.GroupMembershipKindTest')
+data.setCell(9, 3, 17383);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'groupDeletion')
-data.setCell(10, 2, 'testcase.GroupTest')
-data.setCell(10, 3, 13882);
+data.setCell(10, 1, 'idTypeCreation')
+data.setCell(10, 2, 'testcase.IdTypeTest')
+data.setCell(10, 3, 16772);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'groupTypeDeletion')
-data.setCell(11, 2, 'testcase.GroupTypeTest')
-data.setCell(11, 3, 13798);
+data.setCell(11, 1, 'relationshipDeletion')
+data.setCell(11, 2, 'testcase.RelationshipTest')
+data.setCell(11, 3, 16486);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'registrantTagDeletion')
-data.setCell(12, 2, 'testcase.RegistrantTagsTest')
-data.setCell(12, 3, 13493);
+data.setCell(12, 1, 'resetPassword')
+data.setCell(12, 2, 'testcase.LoginPageTest')
+data.setCell(12, 3, 16248);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'registrantTagUpdation')
-data.setCell(13, 2, 'testcase.RegistrantTagsTest')
-data.setCell(13, 3, 13226);
+data.setCell(13, 1, 'groupUpdation')
+data.setCell(13, 2, 'testcase.GroupTest')
+data.setCell(13, 3, 16159);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'relationshipsCreation')
-data.setCell(14, 2, 'testcase.RelationshipTest')
-data.setCell(14, 3, 13150);
+data.setCell(14, 1, 'individualUpdation')
+data.setCell(14, 2, 'testcase.IndividualTest')
+data.setCell(14, 3, 16087);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'individualUpdation')
-data.setCell(15, 2, 'testcase.IndividualTest')
-data.setCell(15, 3, 13106);
+data.setCell(15, 1, 'regionCreation')
+data.setCell(15, 2, 'testcase.RegionTest')
+data.setCell(15, 3, 16058);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'groupTypeCreation')
-data.setCell(16, 2, 'testcase.GroupTypeTest')
-data.setCell(16, 3, 12616);
+data.setCell(16, 1, 'groupMembershipKindCreation')
+data.setCell(16, 2, 'testcase.GroupMembershipKindTest')
+data.setCell(16, 3, 15843);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'districtConfigCreation')
-data.setCell(17, 2, 'testcase.DistrictConfigTest')
-data.setCell(17, 3, 12596);
+data.setCell(17, 1, 'genderTypeDeletion')
+data.setCell(17, 2, 'testcase.GenderTypeTest')
+data.setCell(17, 3, 15795);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'regionCreation')
-data.setCell(18, 2, 'testcase.RegionTest')
-data.setCell(18, 3, 12236);
+data.setCell(18, 1, 'idTypeDeletion')
+data.setCell(18, 2, 'testcase.IdTypeTest')
+data.setCell(18, 3, 15671);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'groupMembershipKindUpdation')
-data.setCell(19, 2, 'testcase.GroupMembershipKindTest')
-data.setCell(19, 3, 12210);
+data.setCell(19, 1, 'districtConfigUpdation')
+data.setCell(19, 2, 'testcase.DistrictConfigTest')
+data.setCell(19, 3, 15487);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'registrantTagCreation')
-data.setCell(20, 2, 'testcase.RegistrantTagsTest')
-data.setCell(20, 3, 12184);
+data.setCell(20, 1, 'idTypeUpdation')
+data.setCell(20, 2, 'testcase.IdTypeTest')
+data.setCell(20, 3, 15255);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'genderTypeCreation')
-data.setCell(21, 2, 'testcase.GenderTypeTest')
-data.setCell(21, 3, 12054);
+data.setCell(21, 1, 'groupTypeCreation')
+data.setCell(21, 2, 'testcase.GroupTypeTest')
+data.setCell(21, 3, 15008);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'groupMembershipKindCreation')
-data.setCell(22, 2, 'testcase.GroupMembershipKindTest')
-data.setCell(22, 3, 11706);
+data.setCell(22, 1, 'genderTypeUpdation')
+data.setCell(22, 2, 'testcase.GenderTypeTest')
+data.setCell(22, 3, 14962);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'resetPassword')
-data.setCell(23, 2, 'testcase.LoginPageTest')
-data.setCell(23, 3, 11507);
+data.setCell(23, 1, 'registrantTagDeletion')
+data.setCell(23, 2, 'testcase.RegistrantTagsTest')
+data.setCell(23, 3, 14896);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'idTypeCreation')
-data.setCell(24, 2, 'testcase.IdTypeTest')
-data.setCell(24, 3, 11222);
+data.setCell(24, 1, 'genderTypeCreation')
+data.setCell(24, 2, 'testcase.GenderTypeTest')
+data.setCell(24, 3, 14393);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'groupTypeUpdation')
-data.setCell(25, 2, 'testcase.GroupTypeTest')
-data.setCell(25, 3, 10987);
+data.setCell(25, 1, 'relationshipUpdation')
+data.setCell(25, 2, 'testcase.RelationshipTest')
+data.setCell(25, 3, 14278);
 data.setCell(26, 0, 26)
 data.setCell(26, 1, 'regionUpdation')
 data.setCell(26, 2, 'testcase.RegionTest')
-data.setCell(26, 3, 10973);
+data.setCell(26, 3, 14016);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'districtConfigUpdation')
-data.setCell(27, 2, 'testcase.DistrictConfigTest')
-data.setCell(27, 3, 10961);
+data.setCell(27, 1, 'groupMembershipKindUpdation')
+data.setCell(27, 2, 'testcase.GroupMembershipKindTest')
+data.setCell(27, 3, 13590);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'genderTypeUpdation')
-data.setCell(28, 2, 'testcase.GenderTypeTest')
-data.setCell(28, 3, 10914);
+data.setCell(28, 1, 'districtConfigCreation')
+data.setCell(28, 2, 'testcase.DistrictConfigTest')
+data.setCell(28, 3, 13501);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'idTypeUpdation')
-data.setCell(29, 2, 'testcase.IdTypeTest')
-data.setCell(29, 3, 10803);
+data.setCell(29, 1, 'registrantTagUpdation')
+data.setCell(29, 2, 'testcase.RegistrantTagsTest')
+data.setCell(29, 3, 13188);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'relationshipUpdation')
-data.setCell(30, 2, 'testcase.RelationshipTest')
-data.setCell(30, 3, 10716);
+data.setCell(30, 1, 'groupTypeUpdation')
+data.setCell(30, 2, 'testcase.GroupTypeTest')
+data.setCell(30, 3, 11918);
 data.setCell(31, 0, 31)
 data.setCell(31, 1, 'loginTest')
 data.setCell(31, 2, 'testcase.LoginPageTest')
-data.setCell(31, 3, 7028);
+data.setCell(31, 3, 7677);
 window.suiteTableData['Social_Registry_Sanity_Test_Suite']= { tableData: data, tableDiv: 'times-div-Social_Registry_Sanity_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Social_Registry_Sanity_Test_Suite">
               </div> <!-- times-div-Social_Registry_Sanity_Test_Suite -->
             </div> <!-- times-div -->
@@ -811,519 +811,648 @@ return data;
                 <span class="method-name">importTestData</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">365 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">resetPassword</span>
-                <span class="method-start">3612 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=resetPassword status=SUCCESS method=LoginPageTest.resetPassword()[pri:1, instance:t...)</span>
-                <span class="method-start">15133 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">15268 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">17008 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:2, instance:testcase....)</span>
-                <span class="method-start">24040 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.IndividualTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">24218 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">24225 ms</span>
+                <span class="method-start">326 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IndividualTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">326 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">individualCreation</span>
-                <span class="method-start">25924 ms</span>
+                <span class="method-start">6320 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">resetPassword</span>
+                <span class="method-start">6320 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=resetPassword status=SUCCESS method=LoginPageTest.resetPassword()[pri:1, instance:t...)</span>
+                <span class="method-start">22585 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">22849 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">25005 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IndividualTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=individualCreation status=SUCCESS method=IndividualTest.individualCreation()[pri:1,...)</span>
-                <span class="method-start">41323 ms</span>
+                <span class="method-start">28977 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">41514 ms</span>
+                <span class="method-start">29236 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">41518 ms</span>
+                <span class="method-start">29243 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">groupCreation</span>
-                <span class="method-start">42992 ms</span>
+                <span class="method-start">31041 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=groupCreation status=SUCCESS method=GroupTest.groupCreation()[pri:1, instance:testc...)</span>
-                <span class="method-start">58131 ms</span>
+                <span class="method-name">tearDown([TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:2, instance:testcase....)</span>
+                <span class="method-start">32687 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GenderTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">58315 ms</span>
+                <span class="method-start">32996 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">58330 ms</span>
+                <span class="method-start">33000 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">genderTypeCreation</span>
-                <span class="method-start">59952 ms</span>
+                <span class="method-start">34434 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=genderTypeCreation status=SUCCESS method=GenderTypeTest.genderTypeCreation()[pri:1,...)</span>
-                <span class="method-start">72010 ms</span>
+                <span class="method-name">tearDown([TestResult name=groupCreation status=SUCCESS method=GroupTest.groupCreation()[pri:1, instance:testc...)</span>
+                <span class="method-start">48436 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupMembershipKindTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">72253 ms</span>
+                <span class="method-start">48682 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">72258 ms</span>
+                <span class="method-start">48698 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">groupMembershipKindCreation</span>
-                <span class="method-start">73569 ms</span>
-              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GenderTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=groupMembershipKindCreation status=SUCCESS method=GroupMembershipKindTest.groupMemb...)</span>
-                <span class="method-start">85278 ms</span>
+                <span class="method-name">tearDown([TestResult name=genderTypeCreation status=SUCCESS method=GenderTypeTest.genderTypeCreation()[pri:1,...)</span>
+                <span class="method-start">48830 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">86410 ms</span>
+                <span class="method-start">49017 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">86425 ms</span>
+                <span class="method-start">49023 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupMembershipKindTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">groupMembershipKindCreation</span>
+                <span class="method-start">50471 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupTypeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">groupTypeCreation</span>
-                <span class="method-start">87972 ms</span>
+                <span class="method-start">51071 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=groupTypeCreation status=SUCCESS method=GroupTypeTest.groupTypeCreation()[pri:1, in...)</span>
-                <span class="method-start">100590 ms</span>
+                <span class="method-start">66084 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupMembershipKindTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=groupMembershipKindCreation status=SUCCESS method=GroupMembershipKindTest.groupMemb...)</span>
+                <span class="method-start">66319 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.IdTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">100759 ms</span>
+                <span class="method-start">66557 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">100764 ms</span>
+                <span class="method-start">66573 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">idTypeCreation</span>
-                <span class="method-start">102122 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=idTypeCreation status=SUCCESS method=IdTypeTest.idTypeCreation()[pri:1, instance:te...)</span>
-                <span class="method-start">113347 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RegionTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">113543 ms</span>
+                <span class="method-start">67206 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">113548 ms</span>
+                <span class="method-start">67210 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IdTypeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">idTypeCreation</span>
+                <span class="method-start">68285 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">regionCreation</span>
-                <span class="method-start">115033 ms</span>
+                <span class="method-start">69198 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IdTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=regionCreation status=SUCCESS method=RegionTest.regionCreation()[pri:1, instance:te...)</span>
-                <span class="method-start">127271 ms</span>
+                <span class="method-name">tearDown([TestResult name=idTypeCreation status=SUCCESS method=IdTypeTest.idTypeCreation()[pri:1, instance:te...)</span>
+                <span class="method-start">85059 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RegistrantTagsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">127471 ms</span>
+                <span class="method-start">85256 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=regionCreation status=SUCCESS method=RegionTest.regionCreation()[pri:1, instance:te...)</span>
+                <span class="method-start">85259 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegistrantTagsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">127484 ms</span>
+                <span class="method-start">85262 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">registrantTagCreation</span>
-                <span class="method-start">129136 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=registrantTagCreation status=SUCCESS method=RegistrantTagsTest.registrantTagCreatio...)</span>
-                <span class="method-start">141323 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RelationshipTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">141444 ms</span>
+                <span class="method-start">85442 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">141448 ms</span>
+                <span class="method-start">85461 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegistrantTagsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registrantTagCreation</span>
+                <span class="method-start">87099 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RelationshipTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">relationshipsCreation</span>
-                <span class="method-start">142846 ms</span>
+                <span class="method-start">87450 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegistrantTagsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=relationshipsCreation status=SUCCESS method=RelationshipTest.relationshipsCreation(...)</span>
-                <span class="method-start">155997 ms</span>
+                <span class="method-name">tearDown([TestResult name=registrantTagCreation status=SUCCESS method=RegistrantTagsTest.registrantTagCreatio...)</span>
+                <span class="method-start">105250 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.DistrictConfigTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">importTestData</span>
-                <span class="method-start">156190 ms</span>
+                <span class="method-start">105440 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">156195 ms</span>
+                <span class="method-start">105444 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RelationshipTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=relationshipsCreation status=SUCCESS method=RelationshipTest.relationshipsCreation(...)</span>
+                <span class="method-start">107100 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.DistrictConfigTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">districtConfigCreation</span>
-                <span class="method-start">157636 ms</span>
+                <span class="method-start">107115 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=districtConfigCreation status=SUCCESS method=DistrictConfigTest.districtConfigCreat...)</span>
-                <span class="method-start">170234 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.IndividualTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">170428 ms</span>
+                <span class="method-start">108294 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">individualUpdation</span>
-                <span class="method-start">171811 ms</span>
+                <span class="method-start">109801 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.DistrictConfigTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=individualUpdation status=SUCCESS method=IndividualTest.individualUpdation()[pri:2,...)</span>
-                <span class="method-start">184919 ms</span>
+                <span class="method-name">tearDown([TestResult name=districtConfigCreation status=SUCCESS method=DistrictConfigTest.districtConfigCreat...)</span>
+                <span class="method-start">120619 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">185118 ms</span>
+                <span class="method-start">120813 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">groupUpdation</span>
-                <span class="method-start">186496 ms</span>
+                <span class="method-start">122539 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IndividualTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=groupUpdation status=SUCCESS method=GroupTest.groupUpdation()[pri:2, instance:testc...)</span>
-                <span class="method-start">200998 ms</span>
+                <span class="method-name">tearDown([TestResult name=individualUpdation status=SUCCESS method=IndividualTest.individualUpdation()[pri:2,...)</span>
+                <span class="method-start">125891 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GenderTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">201202 ms</span>
+                <span class="method-start">126076 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">genderTypeUpdation</span>
-                <span class="method-start">202715 ms</span>
+                <span class="method-start">127679 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=genderTypeUpdation status=SUCCESS method=GenderTypeTest.genderTypeUpdation()[pri:2,...)</span>
-                <span class="method-start">213631 ms</span>
+                <span class="method-name">tearDown([TestResult name=groupUpdation status=SUCCESS method=GroupTest.groupUpdation()[pri:2, instance:testc...)</span>
+                <span class="method-start">138701 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupMembershipKindTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">213773 ms</span>
+                <span class="method-start">138881 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">groupMembershipKindUpdation</span>
-                <span class="method-start">215105 ms</span>
+                <span class="method-start">140928 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GenderTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=groupMembershipKindUpdation status=SUCCESS method=GroupMembershipKindTest.groupMemb...)</span>
-                <span class="method-start">227319 ms</span>
+                <span class="method-name">tearDown([TestResult name=genderTypeUpdation status=SUCCESS method=GenderTypeTest.genderTypeUpdation()[pri:2,...)</span>
+                <span class="method-start">142645 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">227502 ms</span>
+                <span class="method-start">142817 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">groupTypeUpdation</span>
-                <span class="method-start">228969 ms</span>
+                <span class="method-start">144348 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupMembershipKindTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=groupTypeUpdation status=SUCCESS method=GroupTypeTest.groupTypeUpdation()[pri:2, in...)</span>
-                <span class="method-start">239958 ms</span>
+                <span class="method-name">tearDown([TestResult name=groupMembershipKindUpdation status=SUCCESS method=GroupMembershipKindTest.groupMemb...)</span>
+                <span class="method-start">154528 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.IdTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">240137 ms</span>
+                <span class="method-start">154717 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">idTypeUpdation</span>
-                <span class="method-start">241614 ms</span>
+                <span class="method-start">156023 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=idTypeUpdation status=SUCCESS method=IdTypeTest.idTypeUpdation()[pri:2, instance:te...)</span>
-                <span class="method-start">252419 ms</span>
+                <span class="method-name">tearDown([TestResult name=groupTypeUpdation status=SUCCESS method=GroupTypeTest.groupTypeUpdation()[pri:2, in...)</span>
+                <span class="method-start">156273 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RegionTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">252616 ms</span>
+                <span class="method-start">156637 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">regionUpdation</span>
-                <span class="method-start">254072 ms</span>
+                <span class="method-start">158168 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IdTypeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=idTypeUpdation status=SUCCESS method=IdTypeTest.idTypeUpdation()[pri:2, instance:te...)</span>
+                <span class="method-start">171280 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegionTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=regionUpdation status=SUCCESS method=RegionTest.regionUpdation()[pri:2, instance:te...)</span>
-                <span class="method-start">265048 ms</span>
+                <span class="method-start">172190 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RegistrantTagsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">265239 ms</span>
+                <span class="method-start">172372 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">registrantTagUpdation</span>
-                <span class="method-start">267157 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=registrantTagUpdation status=SUCCESS method=RegistrantTagsTest.registrantTagUpdatio...)</span>
-                <span class="method-start">280389 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RelationshipTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">280562 ms</span>
+                <span class="method-start">172404 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">relationshipUpdation</span>
-                <span class="method-start">281876 ms</span>
+                <span class="method-start">173985 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegistrantTagsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registrantTagUpdation</span>
+                <span class="method-start">174315 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=registrantTagUpdation status=SUCCESS method=RegistrantTagsTest.registrantTagUpdatio...)</span>
+                <span class="method-start">187506 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RelationshipTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=relationshipUpdation status=SUCCESS method=RelationshipTest.relationshipUpdation()[...)</span>
-                <span class="method-start">292594 ms</span>
+                <span class="method-start">188267 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.DistrictConfigTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">292799 ms</span>
+                <span class="method-start">188449 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">districtConfigUpdation</span>
-                <span class="method-start">294246 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=districtConfigUpdation status=SUCCESS method=DistrictConfigTest.districtConfigUpdat...)</span>
-                <span class="method-start">305209 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.IndividualTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">305398 ms</span>
+                <span class="method-start">188626 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.DistrictConfigTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">districtConfigUpdation</span>
+                <span class="method-start">189818 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IndividualTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">individualDeletion</span>
-                <span class="method-start">306795 ms</span>
+                <span class="method-start">190801 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.DistrictConfigTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=individualDeletion status=SUCCESS method=IndividualTest.individualDeletion()[pri:3,...)</span>
-                <span class="method-start">322981 ms</span>
+                <span class="method-name">tearDown([TestResult name=districtConfigUpdation status=SUCCESS method=DistrictConfigTest.districtConfigUpdat...)</span>
+                <span class="method-start">205307 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">323224 ms</span>
+                <span class="method-start">205602 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">groupDeletion</span>
-                <span class="method-start">324902 ms</span>
+                <span class="method-start">207116 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IndividualTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=groupDeletion status=SUCCESS method=GroupTest.groupDeletion()[pri:3, instance:testc...)</span>
-                <span class="method-start">338788 ms</span>
+                <span class="method-name">tearDown([TestResult name=individualDeletion status=SUCCESS method=IndividualTest.individualDeletion()[pri:3,...)</span>
+                <span class="method-start">210675 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GenderTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">339921 ms</span>
+                <span class="method-start">210920 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">genderTypeDeletion</span>
-                <span class="method-start">341331 ms</span>
+                <span class="method-start">212353 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=genderTypeDeletion status=SUCCESS method=GenderTypeTest.genderTypeDeletion()[pri:3,...)</span>
-                <span class="method-start">355507 ms</span>
+                <span class="method-name">tearDown([TestResult name=groupDeletion status=SUCCESS method=GroupTest.groupDeletion()[pri:3, instance:testc...)</span>
+                <span class="method-start">224698 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupMembershipKindTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">355750 ms</span>
+                <span class="method-start">224925 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">groupMembershipKindDeletion</span>
-                <span class="method-start">357112 ms</span>
+                <span class="method-start">226464 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GenderTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=groupMembershipKindDeletion status=SUCCESS method=GroupMembershipKindTest.groupMemb...)</span>
-                <span class="method-start">372118 ms</span>
+                <span class="method-name">tearDown([TestResult name=genderTypeDeletion status=SUCCESS method=GenderTypeTest.genderTypeDeletion()[pri:3,...)</span>
+                <span class="method-start">228151 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.GroupTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">373239 ms</span>
+                <span class="method-start">228433 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">groupTypeDeletion</span>
-                <span class="method-start">374588 ms</span>
+                <span class="method-start">229914 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupMembershipKindTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=groupTypeDeletion status=SUCCESS method=GroupTypeTest.groupTypeDeletion()[pri:3, in...)</span>
-                <span class="method-start">388389 ms</span>
+                <span class="method-name">tearDown([TestResult name=groupMembershipKindDeletion status=SUCCESS method=GroupMembershipKindTest.groupMemb...)</span>
+                <span class="method-start">243849 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.IdTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">388586 ms</span>
+                <span class="method-start">244042 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">idTypeDeletion</span>
-                <span class="method-start">390033 ms</span>
+                <span class="method-start">245829 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.GroupTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=idTypeDeletion status=SUCCESS method=IdTypeTest.idTypeDeletion()[pri:3, instance:te...)</span>
-                <span class="method-start">404354 ms</span>
+                <span class="method-name">tearDown([TestResult name=groupTypeDeletion status=SUCCESS method=GroupTypeTest.groupTypeDeletion()[pri:3, in...)</span>
+                <span class="method-start">247493 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RegionTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">404554 ms</span>
+                <span class="method-start">247775 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">regionDeletion</span>
-                <span class="method-start">406027 ms</span>
+                <span class="method-start">249442 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.IdTypeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=regionDeletion status=SUCCESS method=RegionTest.regionDeletion()[pri:3, instance:te...)</span>
-                <span class="method-start">421886 ms</span>
+                <span class="method-name">tearDown([TestResult name=idTypeDeletion status=SUCCESS method=IdTypeTest.idTypeDeletion()[pri:3, instance:te...)</span>
+                <span class="method-start">261504 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RegistrantTagsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">422099 ms</span>
+                <span class="method-start">261735 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registrantTagDeletion</span>
-                <span class="method-start">423434 ms</span>
+                <span class="method-start">263446 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegionTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=registrantTagDeletion status=SUCCESS method=RegistrantTagsTest.registrantTagDeletio...)</span>
-                <span class="method-start">436930 ms</span>
+                <span class="method-name">tearDown([TestResult name=regionDeletion status=SUCCESS method=RegionTest.regionDeletion()[pri:3, instance:te...)</span>
+                <span class="method-start">267304 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.RelationshipTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">437211 ms</span>
+                <span class="method-start">267474 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">relationshipDeletion</span>
-                <span class="method-start">438674 ms</span>
+                <span class="method-start">268957 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RegistrantTagsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=relationshipDeletion status=SUCCESS method=RelationshipTest.relationshipDeletion()[...)</span>
-                <span class="method-start">453501 ms</span>
+                <span class="method-name">tearDown([TestResult name=registrantTagDeletion status=SUCCESS method=RegistrantTagsTest.registrantTagDeletio...)</span>
+                <span class="method-start">278344 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.DistrictConfigTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">454621 ms</span>
+                <span class="method-start">278539 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">districtConfigDeletion</span>
-                <span class="method-start">456066 ms</span>
+                <span class="method-start">280280 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.RelationshipTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=relationshipDeletion status=SUCCESS method=RelationshipTest.relationshipDeletion()[...)</span>
+                <span class="method-start">285445 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.DistrictConfigTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=districtConfigDeletion status=SUCCESS method=DistrictConfigTest.districtConfigDelet...)</span>
-                <span class="method-start">471634 ms</span>
+                <span class="method-start">298159 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
