@@ -30,6 +30,7 @@ public class RegistrationPortalUserTest extends BaseLogin {
         String portalUserName = getTestData().getPortalUserName();
         String portalUserEmail = getTestData().getPortalUserEmail();
         Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registration_portal_user_dropdown"))));
         Commons.click(driver,By.xpath(locators.getProperty("registration_portal_user_dropdown")));
         Commons.click(driver,By.xpath(locators.getProperty("new_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("portal_username")),portalUserName);
