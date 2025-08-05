@@ -4,6 +4,7 @@ import base.BaseLogin;
 import base.DriverManager;
 import listeners.TestListener;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -30,8 +31,8 @@ public class RegistrationPortalUserTest extends BaseLogin {
         String portalUserName = getTestData().getPortalUserName();
         String portalUserEmail = getTestData().getPortalUserEmail();
         Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("registration_portal_user_dropdown"))));
         Commons.click(driver,By.xpath(locators.getProperty("registration_portal_user_dropdown")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("new_button"))));
         Commons.click(driver,By.xpath(locators.getProperty("new_button")));
         Commons.enter(driver, By.xpath(locators.getProperty("portal_username")),portalUserName);
         Commons.enter(driver,By.xpath(locators.getProperty("portal_user_email")),portalUserEmail);
@@ -45,7 +46,8 @@ public class RegistrationPortalUserTest extends BaseLogin {
         Assert.assertTrue(entryFound, "Expected entry with text '" + portalUserName + "' not found");
     }
 
-    @Test(priority = 2, dependsOnMethods = {"registrationPortalUserCreation"})
+//    (priority = 2, dependsOnMethods = {"registrationPortalUserCreation"})
+    @Test
     void grantPortalAccess() throws IOException, InterruptedException {
         WebDriver driver = DriverManager.getDriver();
         login();
@@ -60,15 +62,18 @@ public class RegistrationPortalUserTest extends BaseLogin {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, portalUserName);
         Assert.assertTrue(entryFound, "Expected entry with text '" + portalUserName + "' not found");
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("action_dropdown"))));
         Commons.click(driver, By.xpath(locators.getProperty("action_dropdown")));
         Commons.click(driver, By.xpath(locators.getProperty("grant_portal_access")));
         Commons.click(driver, By.xpath(locators.getProperty("grant_access")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("revoke_access"))));
         WebElement revokeButton = driver.findElement(By.xpath(locators.getProperty("revoke_access")));
         Assert.assertTrue(revokeButton.isDisplayed(), "'Revoke Access' button is not visible after clicking 'Grant Access'.");
 
     }
 
-    @Test(priority = 3, dependsOnMethods = {"registrationPortalUserCreation"})
+//    (priority = 3, dependsOnMethods = {"registrationPortalUserCreation"})
+    @Test
     void revokePortalAccess() throws IOException, InterruptedException {
         WebDriver driver = DriverManager.getDriver();
         login();
@@ -83,9 +88,11 @@ public class RegistrationPortalUserTest extends BaseLogin {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
         boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, portalUserName);
         Assert.assertTrue(entryFound, "Expected entry with text '" + portalUserName + "' not found");
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("action_dropdown"))));
         Commons.click(driver, By.xpath(locators.getProperty("action_dropdown")));
         Commons.click(driver, By.xpath(locators.getProperty("grant_portal_access")));
         Commons.click(driver, By.xpath(locators.getProperty("revoke_access")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("grant_access"))));
         WebElement grantButton = driver.findElement(By.xpath(locators.getProperty("grant_access")));
         Assert.assertTrue(grantButton.isDisplayed(), "'Grant Access' button is not visible after clicking 'Revoke Access'.");
     }
@@ -116,5 +123,20 @@ public class RegistrationPortalUserTest extends BaseLogin {
         wait.until(ExpectedConditions.visibilityOfElementLocated(updatedEntry));
         boolean entryUpdateFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, portalUserNameUpdated);
         Assert.assertTrue(entryUpdateFound, "Expected entry with text '" + portalUserNameUpdated + "' not found");
+    }
+
+
+    @Test
+    void registrationPortalUserDeletion() throws IOException, InterruptedException {
+        WebDriver driver = DriverManager.getDriver();
+        login();
+        Properties locators = getLocators();
+        String portalUserNameUpdated = getTestData().getPortalUserNameUpdated();
+        Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
+        Commons.click(driver, By.xpath(locators.getProperty("settings")));
+        Commons.click(driver,By.xpath(locators.getProperty("users_and_companies")));
+        Commons.click(driver, By.xpath(locators.getProperty("users")));
+
+
     }
 }
