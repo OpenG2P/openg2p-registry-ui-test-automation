@@ -46,8 +46,8 @@ public class RegistrationPortalUserTest extends BaseLogin {
         Assert.assertTrue(entryFound, "Expected entry with text '" + portalUserName + "' not found");
     }
 
-//    (priority = 2, dependsOnMethods = {"registrationPortalUserCreation"})
-    @Test
+
+    @Test(priority = 2, dependsOnMethods = {"registrationPortalUserCreation"})
     void grantPortalAccess() throws IOException, InterruptedException {
         WebDriver driver = DriverManager.getDriver();
         login();
@@ -72,8 +72,8 @@ public class RegistrationPortalUserTest extends BaseLogin {
 
     }
 
-//    (priority = 3, dependsOnMethods = {"registrationPortalUserCreation"})
-    @Test
+
+    @Test(priority = 3, dependsOnMethods = {"registrationPortalUserCreation"})
     void revokePortalAccess() throws IOException, InterruptedException {
         WebDriver driver = DriverManager.getDriver();
         login();
@@ -126,17 +126,51 @@ public class RegistrationPortalUserTest extends BaseLogin {
     }
 
 
-    @Test
+    @Test(priority =5, dependsOnMethods = {"registrationPortalUserUpdation"})
     void registrationPortalUserDeletion() throws IOException, InterruptedException {
         WebDriver driver = DriverManager.getDriver();
         login();
         Properties locators = getLocators();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String portalUserNameUpdated = getTestData().getPortalUserNameUpdated();
         Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
         Commons.click(driver, By.xpath(locators.getProperty("settings")));
         Commons.click(driver,By.xpath(locators.getProperty("users_and_companies")));
         Commons.click(driver, By.xpath(locators.getProperty("users")));
+        Commons.click(driver,By.xpath(locators.getProperty("remove_internal_users")));
+        Commons.click(driver, By.xpath(locators.getProperty("dropdown")));
+        Commons.click(driver, By.xpath(locators.getProperty("inactive_users")));
+        Commons.click(driver, By.xpath(locators.getProperty("user")));
+        Thread.sleep(5000);
+        String tableXPath = locators.getProperty("table");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableXPath)));
+        boolean entryFound = Commons.clickEntryInPaginatedTable(driver, tableXPath, portalUserNameUpdated);
+        Assert.assertTrue(entryFound, "Expected entry with text '" + portalUserNameUpdated + "' not found");
+        Commons.click(driver, By.xpath(locators.getProperty("action_dropdown")));
+        Commons.click(driver, By.xpath(locators.getProperty("delete_user")));
+        Commons.click(driver, By.xpath(locators.getProperty("delete_confirmation")));
 
+        By deletedEntry = By.xpath("//tr[td[contains(text(),'" + portalUserNameUpdated + "')]]");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(deletedEntry));
+        boolean entryStillExists = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, portalUserNameUpdated);
+        Assert.assertFalse(entryStillExists, "Entry with text '" + portalUserNameUpdated + "' should be deleted but still exists.");
 
+        Commons.click(driver, By.xpath(locators.getProperty("home_menu")));
+        Commons.click(driver,By.xpath(locators.getProperty("registration_portal_user_dropdown")));
+        Commons.click(driver,By.xpath(locators.getProperty("list_view")));
+
+        String regTableXPath = locators.getProperty("table");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(regTableXPath)));
+        boolean regEntryFound = Commons.clickEntryInPaginatedTable(driver, regTableXPath, portalUserNameUpdated);
+        Assert.assertTrue(regEntryFound, "Expected entry with text '" + portalUserNameUpdated + "' not found");
+
+        Commons.click(driver, By.xpath(locators.getProperty("action_dropdown")));
+        Commons.click(driver, By.xpath(locators.getProperty("delete_user")));
+        Commons.click(driver, By.xpath(locators.getProperty("delete_confirmation")));
+
+        By deletedUserEntry = By.xpath("//tr[td[contains(text(),'" + portalUserNameUpdated + "')]]");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(deletedUserEntry));
+        boolean entryStillExist = Commons.isEntryPresentInPaginatedTable(driver, tableXPath, portalUserNameUpdated);
+        Assert.assertFalse(entryStillExist, "Entry with text '" + portalUserNameUpdated + "' should be deleted but still exists.");
     }
 }

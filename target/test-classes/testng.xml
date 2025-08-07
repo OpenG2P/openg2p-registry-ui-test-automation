@@ -20,6 +20,7 @@
             <class name="testcase.RegistrantTagsTest"/>
             <class name="testcase.RelationshipTest"/>
             <class name="testcase.DistrictConfigTest"/>
+            <class name="testcase.RegistrationPortalUserTest"/>
         </classes>
     </test>
 </suite>
