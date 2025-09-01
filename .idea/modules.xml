@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/social-registry-ui-sanity.iml" filepath="$PROJECT_DIR$/social-registry-ui-sanity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openg2p-registry-ui-sanity.iml" filepath="$PROJECT_DIR$/registry-ui-sanity.iml" />
     </modules>
   </component>
 </project>

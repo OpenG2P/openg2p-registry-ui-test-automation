@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="social-registry-ui-sanity" />
+        <module name="openg2p-registry-ui-sanity" />
       </profile>
     </annotationProcessing>
   </component>
